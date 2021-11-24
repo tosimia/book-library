@@ -13,8 +13,8 @@ function App() {
      <div>
        <BrowserRouter>
        <Routes>
-        <Route exact path ="/" caseSensitive={false} element={<BookContainer/>} />
-        <Route exact path ="/currently reading" caseSensitive={false} element={<CurrentlyReading/>} />
+        <Route  path ="/" caseSensitive={false} element={<BookContainer/>} />
+        <Route path ="/currently-reading" caseSensitive={false} element={<CurrentlyReading/>} />
         
         
       </Routes>

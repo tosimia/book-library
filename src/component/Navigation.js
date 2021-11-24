@@ -3,7 +3,7 @@ const Navigation = () => {
     return(
         <nav>
             <Link to="/">Home</Link>
-            <Link to="/currently reading">Current Reading</Link>
+            <Link to="/currently-reading">Current Reading</Link>
         </nav>
     )
 }

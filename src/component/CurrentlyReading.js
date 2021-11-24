@@ -3,7 +3,8 @@ import Navigation from "./Navigation";
 const CurrentlyReading = () =>{
     
     return(
-        <div> <Navigation/> 
+        <div>
+         <Navigation/> 
         <div>CurrentlyReading</div>
         </div>
     )
