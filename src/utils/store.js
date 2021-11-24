@@ -4,6 +4,7 @@ export const BookContext = React.createContext();
 
 export default ({children}) =>{
     const [book, setBook] = useState([])
+    const [storedBook, setStoredbook] = useState([])
 
 const bookData = async () =>{
     const response = await getBook();
@@ -38,12 +39,18 @@ const AddToStorage = (id, quantity, storageName)=>{
    localStorage.setItem(storageName, JSON.stringify(currentlyReading));
 };
 
+const getBooksFromStorage = (storageName) =>{
+    setStoredbook(JSON.parse(localStorage.getItem(storageName)));
+};
+
 const store = {
     bookFunc: bookData,
     book: book,
     AddToStorage: AddToStorage,
+    getBooksFromStorage: getBooksFromStorage,
+    storedBook: storedBook
 
-}
+};
 return(
 <BookContext.Provider value={store}>
     {children}

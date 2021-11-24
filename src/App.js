@@ -1,6 +1,8 @@
-import React, {useState} from "react";
-import BookContainer from "./component/BookContainer"
+import React from "react";
+import BookContainer from "./component/BookContainer";
+import CurrentlyReading from "./component/CurrentlyReading";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
@@ -9,7 +11,15 @@ function App() {
   return (
   
      <div>
- <BookContainer/> 
+       <BrowserRouter>
+       <Routes>
+        <Route exact path ="/" caseSensitive={false} element={<BookContainer/>} />
+        <Route exact path ="/currently reading" caseSensitive={false} element={<CurrentlyReading/>} />
+        
+        
+      </Routes>
+    </BrowserRouter>
+    {/* <BookContainer/> */}
      </div>
    
   );
