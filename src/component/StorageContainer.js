@@ -1,14 +1,13 @@
 import React, {useContext, useEffect} from "react";
 import { BookContext } from "../utils/store";
 
-import HomePage from "./HomePage";
- import Navigation from "./Navigation";
-
-const BookContainer = () =>{
+import Navigation from "./Navigation";
+const stored = ["Read, Currently Reading, Want to read"];
+const StorageContainer = () =>{
   const value = useContext(BookContext)
 
 useEffect(()=>{
-    value.bookFunc()
+    value.getBooksFromStorage();
     
 },[]);
 return(
@@ -29,4 +28,4 @@ return(
 )
 }
 
-export default BookContainer;
+export default StorageContainer;

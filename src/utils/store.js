@@ -12,7 +12,7 @@ const bookData = async () =>{
         setBook(response.data.items)
     }
 }
-const AddToStorage = (id, quantity, storageName)=>{
+const AddToStorage = (id, storageName)=>{
     console.log(id)
    let currentlyReading = [];
    let isAlreadyIn = false;
@@ -30,7 +30,7 @@ const AddToStorage = (id, quantity, storageName)=>{
    }
    if(isAlreadyIn){
     return ""
-        // currentlyReading[number].quantity = currentlyReading[number].quantity + quantity;
+
    }else{
        currentlyReading.push({
            id: id,

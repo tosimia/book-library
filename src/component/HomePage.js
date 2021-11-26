@@ -19,7 +19,7 @@ const HomePage =({info, AddToStorage})=>{
             <a href={info.volumeInfo.infoLink}>Google link</a>
             <button 
             onClick={()=>{
-                AddToStorage(info.id, 1, "Currently Reading")
+                AddToStorage(info.id, "Currently Reading")
             }}
             >Currently Reading</button>
             <button
