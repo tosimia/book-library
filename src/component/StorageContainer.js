@@ -1,29 +1,45 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { BookContext } from "../utils/store";
-
+import CurrentlyReading from "./CurrentlyReading"
 import Navigation from "./Navigation";
-const stored = ["Read, Currently Reading, Want to read"];
+
+const stored = ["Read", "Currently Reading", "Want to read"];
 const StorageContainer = () =>{
-  const value = useContext(BookContext)
+    const [storedBook, setStoredbook] = useState([])
+//   const value = useContext(BookContext)
+
+  
+  
+  
+  const getBooksFromStorage = (storageName) =>{
+    setStoredbook(JSON.parse(localStorage.getItem(storageName)));
+};
+
 
 useEffect(()=>{
-    value.getBooksFromStorage();
+     getBooksFromStorage(stored[1]);
+     
     
 },[]);
+
 return(
     <div>
+
          <Navigation/> 
-    <div>{value.book && (
+    <div>
+        {storedBook && ( 
         <div>
-            {value.book.map((item)=>(
+            {storedBook.map((item)=>(
                 <div>
-                <HomePage 
-                    info={item} 
-                    AddToStorage={value.AddToStorage}/>             
-                </div>
-            ))}
+                <CurrentlyReading 
+                    info={item.book} 
+                    //  AddToStorage={value.AddToStorage}
+                    />             
+                </div> 
+            ))} 
         </div>
-    )}</div>
+     )} 
+    </div>
     </div>
 )
 }

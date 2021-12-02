@@ -14,22 +14,22 @@ const HomePage =({info, AddToStorage})=>{
             <img src={info.volumeInfo.imageLinks.smallThumbnail}/>
             <h2>{info.volumeInfo.title}</h2>
             <h3>{Author() }</h3>  
-            <p>{info.volumeInfo.description}</p>
+            {/* <p>{info.volumeInfo.description}</p>
             <a href={info.accessInfo.pdf.acsTokenLink}>Download pdf</a>
-            <a href={info.volumeInfo.infoLink}>Google link</a>
+            <a href={info.volumeInfo.infoLink}>Google link</a> */}
             <button 
             onClick={()=>{
-                AddToStorage(info.id, "Currently Reading")
+                AddToStorage(info, "Currently Reading")
             }}
             >Currently Reading</button>
             <button
             onClick={()=>{
-                AddToStorage(info.id, 1, "Read")
+                AddToStorage(info, 1, "Read")
             }}
             >Read</button>
             <button
             onClick={()=>{
-                AddToStorage(info.id, 1, "Want to Read")
+                AddToStorage(info, 1, "Want to Read")
             }}
             >Want to read</button>
             

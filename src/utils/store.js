@@ -4,7 +4,7 @@ export const BookContext = React.createContext();
 
 export default ({children}) =>{
     const [book, setBook] = useState([])
-    const [storedBook, setStoredbook] = useState([])
+    
 
 const bookData = async () =>{
     const response = await getBook();
@@ -12,17 +12,17 @@ const bookData = async () =>{
         setBook(response.data.items)
     }
 }
-const AddToStorage = (id, storageName)=>{
-    console.log(id)
-   let currentlyReading = [];
+const AddToStorage = (book, storageName)=>{
+    
+   let StoredBookId = [];
    let isAlreadyIn = false;
    let number;
    if (localStorage.getItem(storageName)){
-       currentlyReading = JSON.parse(localStorage.getItem(storageName))
+       StoredBookId = JSON.parse(localStorage.getItem(storageName))
    }
 
-   for(let i = currentlyReading.length -1; i >=0; i--){
-       if(currentlyReading[i].id === id){
+   for(let i = StoredBookId.length -1; i >=0; i--){
+       if(StoredBookId[i].id === book.id){
            isAlreadyIn = true;
            number = i;
            break;
@@ -32,23 +32,21 @@ const AddToStorage = (id, storageName)=>{
     return ""
 
    }else{
-       currentlyReading.push({
-           id: id,
+       StoredBookId.push({
+           book: book,
        });
    }
-   localStorage.setItem(storageName, JSON.stringify(currentlyReading));
+   localStorage.setItem(storageName, JSON.stringify(StoredBookId));
 };
 
-const getBooksFromStorage = (storageName) =>{
-    setStoredbook(JSON.parse(localStorage.getItem(storageName)));
-};
+
 
 const store = {
     bookFunc: bookData,
     book: book,
     AddToStorage: AddToStorage,
-    getBooksFromStorage: getBooksFromStorage,
-    storedBook: storedBook
+    
+   
 
 };
 return(
