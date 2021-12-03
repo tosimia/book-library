@@ -12,7 +12,7 @@ const bookData = async () =>{
         setBook(response.data.items)
     }
 }
-const AddToStorage = (book, storageName)=>{
+const AddToStorage = (book,quantity, storageName)=>{
     
    let StoredBookId = [];
    let isAlreadyIn = false;
@@ -39,13 +39,19 @@ const AddToStorage = (book, storageName)=>{
    localStorage.setItem(storageName, JSON.stringify(StoredBookId));
 };
 
-
+const Author = (info) =>{
+    if(info.volumeInfo.authors !== undefined){
+        if(info.volumeInfo.authors.length >= 1){            
+      return info.volumeInfo.authors.map && info.volumeInfo.authors.map((author) => author)
+   }
+     }
+}
 
 const store = {
     bookFunc: bookData,
     book: book,
     AddToStorage: AddToStorage,
-    
+    Author: Author
    
 
 };

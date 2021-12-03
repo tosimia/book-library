@@ -5,7 +5,7 @@ import HomePage from "./HomePage";
  import Navigation from "./Navigation";
 
 const BookContainer = () =>{
-  const value = useContext(BookContext)
+    const value = useContext(BookContext)
 
 useEffect(()=>{
     value.bookFunc()
@@ -20,7 +20,9 @@ return(
                 <div>
                 <HomePage 
                     info={item} 
-                    AddToStorage={value.AddToStorage}/>             
+                    AddToStorage={value.AddToStorage}
+                    Author = {value.Author}
+                    />             
                 </div>
             ))}
         </div>

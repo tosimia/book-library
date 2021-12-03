@@ -1,9 +1,8 @@
 import React from "react";
 import BookContainer from "./component/BookContainer";
-
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import StorageContainer from "./component/StorageContainer";
+import DisplayOnlyOneItem from "./component/DisplayOnlyOneItem";
 
 
 function App() {
@@ -13,11 +12,10 @@ function App() {
   
      <div>
        <BrowserRouter>
-       <Routes>
-        <Route  path ="/" caseSensitive={false} element={<BookContainer/>} />
-        <Route path ="/currently-reading" caseSensitive={false} element={<StorageContainer/>} />
-        
-        
+        <Routes>
+          <Route  path ="/" caseSensitive={false} element={<BookContainer/>} />
+          <Route path ={`/bookList/:slug`} caseSensitive={false} element={<StorageContainer/>} />
+          <Route path={`/book/:id`} caseSensitive={false} element={<DisplayOnlyOneItem/>}/>
       </Routes>
     </BrowserRouter>
     {/* <BookContainer/> */}

@@ -1,25 +1,26 @@
 import React, {useContext, useEffect, useState} from "react";
 import { BookContext } from "../utils/store";
-import CurrentlyReading from "./CurrentlyReading"
+import BookList from "./BookList"
 import Navigation from "./Navigation";
+import { stored } from "../model/navArray";
 
-const stored = ["Read", "Currently Reading", "Want to read"];
 const StorageContainer = () =>{
     const [storedBook, setStoredbook] = useState([])
-//   const value = useContext(BookContext)
-
-  
-  
-  
-  const getBooksFromStorage = (storageName) =>{
-    setStoredbook(JSON.parse(localStorage.getItem(storageName)));
+    const value = useContext(BookContext)
+    const getCurrentlyReading = (storageName) =>{
+        setStoredbook(JSON.parse(localStorage.getItem(storageName)));
+    }
+    const getBooksFromStorage = (storageName) =>{
+     storageName.map((item) =>{
+          console.log(item)
+        return setStoredbook(JSON.parse(localStorage.getItem(item)));
+      })   
 };
 
-
+console.log(storedBook)
 useEffect(()=>{
-     getBooksFromStorage(stored[1]);
-     
-    
+    getCurrentlyReading("Currently-Reading");
+    //  getBooksFromStorage(stored); 
 },[]);
 
 return(
@@ -31,9 +32,9 @@ return(
         <div>
             {storedBook.map((item)=>(
                 <div>
-                <CurrentlyReading 
+                <BookList 
                     info={item.book} 
-                    //  AddToStorage={value.AddToStorage}
+                    Author = {value.Author}
                     />             
                 </div> 
             ))} 
