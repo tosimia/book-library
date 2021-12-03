@@ -14,7 +14,7 @@ function App() {
        <BrowserRouter>
         <Routes>
           <Route  path ="/" caseSensitive={false} element={<BookContainer/>} />
-          <Route path ={`/bookList/:slug`} caseSensitive={false} element={<StorageContainer/>} />
+          <Route path ={`/:slug`} caseSensitive={false} element={<StorageContainer/>} />
           <Route path={`/book/:id`} caseSensitive={false} element={<DisplayOnlyOneItem/>}/>
       </Routes>
     </BrowserRouter>

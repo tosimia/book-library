@@ -1,7 +1,7 @@
 
 
 const BookList = ({info, Author}) =>{
-    console.log(info)
+    
     return(
         <div>
             <img src={info.volumeInfo.imageLinks.smallThumbnail}/>
