@@ -1,6 +1,6 @@
-# To set up the project
+# To set up the project follow the steps below
 
-Git clone https://github.com/tosimiadesoye/book-library.git
+- Git clone https://github.com/tosimiadesoye/book-library.git
 - npm install
 - npm start
 - to run the app in the development mode.\
