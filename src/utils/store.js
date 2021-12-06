@@ -14,29 +14,31 @@ const bookData = async () =>{
 }
 const AddToStorage = (book,quantity, storageName)=>{
     
-   let StoredBookId = [];
+   let storedBook = [];
+
+   if (localStorage.getItem(storageName)){
+       storedBook = JSON.parse(localStorage.getItem(storageName))
+   }
    let isAlreadyIn = false;
    let number;
-   if (localStorage.getItem(storageName)){
-       StoredBookId = JSON.parse(localStorage.getItem(storageName))
-   }
-
-   for(let i = StoredBookId.length -1; i >=0; i--){
-       if(StoredBookId[i].id === book.id){
+   for(let i = storedBook.length -1; i >=0; i--){
+       if(storedBook[i].book.id === book.id){
            isAlreadyIn = true;
            number = i;
            break;
        }
    }
    if(isAlreadyIn){
-    return ""
+    
+    storedBook[number].quantity = storedBook[number].quantity + quantity;
 
    }else{
-       StoredBookId.push({
+       storedBook.push({
            book: book,
+           quantity: quantity,
        });
    }
-   localStorage.setItem(storageName, JSON.stringify(StoredBookId));
+   localStorage.setItem(storageName, JSON.stringify(storedBook));
 };
 
 const Author = (info) =>{

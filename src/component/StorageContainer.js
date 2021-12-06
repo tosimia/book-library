@@ -8,19 +8,19 @@ const StorageContainer = () =>{
     // const [stored] = useState([]) 
     const [storedBook, setStoredbook] = useState([])
     const value = useContext(BookContext)
-    let params = useParams()
-    console.log(params)
  
-    const getBooksFromStorage = (storageName) =>{
-      storageName.map((item) =>{
-        return setStoredbook(JSON.parse(localStorage.getItem(storageName)));
-       })   
+   
+ 
+    const getBooksFromStorage = () =>{
+     
+        return setStoredbook(JSON.parse(localStorage.getItem("Want-to-Read")));
+          
 };
 
 
 useEffect(()=>{
-     getBooksFromStorage(stored); 
-},[stored]);
+     getBooksFromStorage(); 
+},[]);
 
 return(
     <div>
@@ -30,7 +30,7 @@ return(
          {storedBook && ( 
         <div>
             {storedBook.map((item)=>{
-                 if(params.slug === stored[0] || params.slug === stored[1] || params.slug === stored[2]){
+                
                     return (
                         <div>
                          <BookList 
@@ -39,9 +39,7 @@ return(
                              />             
                          </div> 
                         )
-                 }else{
-                     return <div>where are my books?</div>
-                 }
+               
                
 })} 
         </div>

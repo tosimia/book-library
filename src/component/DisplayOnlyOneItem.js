@@ -1,6 +1,7 @@
 import { useLocation} from "react-router";
 import { BookContext } from "../utils/store";
 import { useContext } from "react";
+import Navigation from "./Navigation";
 const DisplayOnlyOneItem = () =>{
     const value = useContext(BookContext)
 
@@ -14,6 +15,8 @@ const DisplayOnlyOneItem = () =>{
         }
 
     return(
+        <div>
+            <Navigation/>
         <div key={location.key}>
             <img src={info.volumeInfo.imageLinks.smallThumbnail}/>
                 <h2>{info.volumeInfo.title}</h2>
@@ -36,6 +39,7 @@ const DisplayOnlyOneItem = () =>{
                     value.AddToStorage(info, 1, "Want-to-Read")
                 }}
                 >Want to read</button>
+        </div>
         </div>
     )
 }
