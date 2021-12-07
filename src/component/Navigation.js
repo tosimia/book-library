@@ -5,9 +5,9 @@ const Navigation = () => {
         <nav>
             <Link to="/">Home</Link>
             <div>
-                {stored.map((data) => (
+                {stored.map((data, index) => (
                         <div>
-                        <Link key={data} to={`/${data}`}>{data}</Link>
+                        <Link key={index} to={`/${data}`}>{data}</Link>
                         </div>
                     ))}
             </div>
