@@ -1,23 +1,35 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import {  getBook} from "../../services";
+import { BookContext } from "../utils/store";
+
 const Search = () => {
+    let value = useContext(BookContext)
      //the query for search api is key word
   const [keyword, setKeyword] = useState("");
-    const searchBy = async () =>{
-        let value = ""
+
+    const searchedTypes = async (value = "intitle") =>{   
         switch (value){
-            case "intitle":
+            case value = "inauthor":
+                searchedBooks(value)
+                console.log(value)
                 break;
-            case "inauthor":
+            case value = "subject":
+                searchedBooks(value)
+                console.log(value)
                 break;
-            case "subject":
-                break;
-                case "ispublisher":
-                    break;
+                case value = "ispublisher":
+                    console.log(value)
+                break
+            default:
+                console.log("default is working")
+
         }
-        const response = await getBook();
+    }
+
+    const searchedBooks = async (item) =>{
+        const response = await getBook(item);
         if (response){
-            setBook(response.data.items)
+            value.setBook(response.data.items)
         }
     }
     return(

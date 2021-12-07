@@ -53,7 +53,8 @@ const store = {
     bookFunc: bookData,
     book: book,
     AddToStorage: AddToStorage,
-    Author: Author
+    Author: Author,
+    setBook: setBook,
    
 
 };
