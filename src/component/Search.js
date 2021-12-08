@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import {  getBook} from "../../services";
+import {  getSearchValue} from "../services";
 import { BookContext } from "../utils/store";
 
 const Search = () => {
@@ -9,26 +9,33 @@ const Search = () => {
   const [searchClicked, setSearchClicked] = useState("")
   const [searchType, setSearchType] = useState("")
 
-  const handleSubmit = (e)=>{
-      e.preventDefault();
-      value.searchedTypes(keyword)
-  }
-
-  const handleSearch = () =>{
-    setSearchClicked(!searchType)
-  }
-    const searchedTypes = async (value = "intitle") =>{   
-        switch (value){
-            case value = "inauthor":
-                searchedBooks(value)
-                console.log(value)
+  const searchedBooks = async (search,item) =>{
+    const response = await getSearchValue(search,item);
+    if (response){
+        value.setBook(response.data.items)
+    }
+}
+    const searchedTypes = async (search, term) =>{   
+        switch (term){
+            case term = "intitle":
+                searchedBooks(term)
+                console.log(search)
+                console.log(term)                
                 break;
-            case value = "subject":
-                searchedBooks(value)
-                console.log(value)
+            case term = "inauthor":
+                searchedBooks(term)
+                console.log(search)
+                console.log(term)                 
                 break;
-                case value = "inpublisher":
-                    console.log(value)
+            case term = "subject":
+                searchedBooks(term)
+                console.log(search) 
+                console.log(term)                
+                break;
+                case term = "inpublisher":
+                searchedBooks(term)
+                console.log(search)
+                console.log(term) 
                 break
             default:
                 console.log("default is working")
@@ -36,12 +43,16 @@ const Search = () => {
         }
     }
 
-    const searchedBooks = async (item) =>{
-        const response = await getBook(item);
-        if (response){
-            value.setBook(response.data.items)
-        }
-    }
+
+  const handleSubmit = (e)=>{
+       e.preventDefault();
+      searchedTypes(keyword, searchType)
+  }
+
+  const handleSearch = () =>{
+    setSearchClicked(!searchType)
+  }
+                  
     return(
         <div>
             
@@ -59,10 +70,19 @@ const Search = () => {
                  value={searchType}
                 onChange={(e) => setSearchType(e.target.value)}
                 >
-                    <option value="inauthor"></option>
-                    <option value="subject"></option>
-                    <option value="inpublisher"></option>
+                    <option>Search</option>
+                    <option value="intitle">Title</option>
+                    <option value="inauthor">Author</option>
+                    <option value="subject">Subject</option>
+                    <option value="inpublisher">Publisher</option>
                 </select>
+
+          <input
+            className="rounded p-2 shadow-sm text-white bg-pink-900"
+            type="submit"
+            value="submit"
+            onClick={handleSearch}
+          />
             </div>
             </form>
         </div>
