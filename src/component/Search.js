@@ -9,12 +9,15 @@ const Search = () => {
   const [searchClicked, setSearchClicked] = useState("")
   const [searchType, setSearchType] = useState("")
 
-  const searchedBooks = async (search,item) =>{
-    const response = await getSearchValue(search,item);
-    if (response){
-        value.setBook(response.data.items)
-    }
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+   searchedTypes(keyword, searchType)
 }
+
+const handleSearch = () =>{
+ setSearchClicked(!searchType)
+}
+       
     const searchedTypes = async (search, term) =>{   
         switch (term){
             case term = "intitle":
@@ -43,16 +46,13 @@ const Search = () => {
         }
     }
 
-
-  const handleSubmit = (e)=>{
-       e.preventDefault();
-      searchedTypes(keyword, searchType)
-  }
-
-  const handleSearch = () =>{
-    setSearchClicked(!searchType)
-  }
-                  
+    const searchedBooks = async (search,item) =>{
+        const response = await getSearchValue(search,item);
+        if (response){
+            value.setBook(response.data.items)
+        }
+    }
+          
     return(
         <div>
             

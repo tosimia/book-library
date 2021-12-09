@@ -6,8 +6,8 @@ const getBook =  (value) =>{
     return axios.get(API_URI);
 }
 const getSearchValue =  (search, term)=>{
-    const API_URI = `https://www.googleapis.com/books/v1/volumes?q=${search}+${term}&filter=paid-ebooks&print-ty
-    pe=books&projection=lite`
+    const API_URI = `https://www.googleapis.com/books/v1/volumes?q=${search}+${term}&filter=paid-ebooks&print-type=books&projection=lite`
+    
     console.log(API_URI)
     return axios.get(API_URI);
 }
