@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from "react";
+import React, {useContext} from "react";
 import { BookContext } from "../utils/store";
 
 import HomePage from "./HomePage";
@@ -8,10 +8,7 @@ import Search from "./Search";
 const BookContainer = () =>{
     const value = useContext(BookContext)
 
-useEffect(()=>{
-    value.bookFunc()
-    
-},[]);
+
 return(
     <div>
          <Navigation/>
@@ -23,7 +20,7 @@ return(
                 <HomePage 
                     info={item} 
                     AddToStorage={value.AddToStorage}
-                    Author = {value.Author}
+                    Author = {value.authorOrCategory}
                     />             
                 </div>
             ))}

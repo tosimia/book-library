@@ -14,7 +14,8 @@ const DisplayOnlyOneItem = () =>{
         } else {
             info = location.state.data;
         }
-console.log(value.book.categories)
+
+
     const getText = () =>{
         const text = info.volumeInfo.description 
         if(!text) return ""
@@ -53,7 +54,8 @@ console.log(value.book.categories)
         <div key={location.key}>
             <img src={info.volumeInfo.imageLinks.smallThumbnail}/>
                 <h2>{info.volumeInfo.title}</h2>
-                 <h3>{value.Author(info) }</h3>  
+                 <h3>{value.authorOrCategory(info.volumeInfo.authors) }</h3>  
+                 <p>{value.authorOrCategory(info.volumeInfo.categories)}</p> 
                  {/* <p>{info.volumeInfo.description}</p>  */}
                  <div>{getText()}</div>
                  {/* <p>{info.searchInfo.textSnippet}</p> */}

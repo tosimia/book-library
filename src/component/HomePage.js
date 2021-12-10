@@ -10,7 +10,9 @@ const HomePage =({info, Author, AddToStorage})=>{
                  state = {{data: info}}>
                 <img src={info.volumeInfo.imageLinks.smallThumbnail}/>
                 <h2>{info.volumeInfo.title}</h2>
-                <h3>{Author(info) }</h3>        
+                 <h3>{Author(info.volumeInfo.authors) }</h3> 
+                 {/* categories */}
+                <h3>{Author(info.volumeInfo.categories) }</h3>       
             </Link>
                 <div>
                     <button 

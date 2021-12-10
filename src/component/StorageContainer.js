@@ -35,7 +35,7 @@ return(
                         <div>
                          <BookList 
                              info={item.book} 
-                             Author = {value.Author}
+                             Author = {value.authorOrCategory}
                              />             
                          </div> 
                         )

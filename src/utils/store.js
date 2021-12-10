@@ -1,17 +1,10 @@
 import React, {useState} from "react";
-import {  getBook} from "../services";
+import data from "../model/book.json";
 export const BookContext = React.createContext();
 
 export default ({children}) =>{
-    const [book, setBook] = useState([])
+     const [book, setBook] = useState(data)
     
-
-const bookData = async () =>{
-    const response = await getBook();
-    if (response){
-        setBook(response.data.items)
-    }
-}
 const AddToStorage = (book,quantity, storageName)=>{
     
    let storedBook = [];
@@ -41,19 +34,19 @@ const AddToStorage = (book,quantity, storageName)=>{
    localStorage.setItem(storageName, JSON.stringify(storedBook));
 };
 
-const Author = (info) =>{
-    if(info.volumeInfo.authors !== undefined){
-        if(info.volumeInfo.authors.length >= 1){            
-      return info.volumeInfo.authors.map && info.volumeInfo.authors.map((author) => author)
+
+const authorOrCategory = (value) =>{   
+    if(value !== undefined){
+        if(value.length >= 1){ 
+            console.log(value)           
+      return value.map && value.map((item) => item)
    }
      }
 }
-
 const store = {
-    bookFunc: bookData,
+    authorOrCategory: authorOrCategory,
     book: book,
     AddToStorage: AddToStorage,
-    Author: Author,
     setBook: setBook,
    
 

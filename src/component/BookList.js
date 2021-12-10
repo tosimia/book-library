@@ -6,7 +6,7 @@ const BookList = ({info, Author}) =>{
         <div>
             <img src={info.volumeInfo.imageLinks.smallThumbnail}/>
             <h2>{info.volumeInfo.title}</h2>
-            <h3>{Author(info) }</h3>  
+            <h3>{Author(info.volumeInfo.authors) }</h3>
             <p>rating</p>
             <p>review</p>
         </div>
