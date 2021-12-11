@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import { BookContext } from "../utils/store";
-
+import { Link } from "react-router-dom";
+import { bookCategory } from "../model/array"
 import HomePage from "./HomePage";
  import Navigation from "./Navigation";
 import Search from "./Search";
@@ -12,6 +13,8 @@ const BookContainer = () =>{
 return(
     <div>
          <Navigation/>
+
+        <div>
          <Search/> 
     <div>{value.book && (
         <div>
@@ -26,6 +29,29 @@ return(
             ))}
         </div>
     )}</div>
+    </div>
+    <div>
+        <div>
+        <h1>Genres</h1>
+        </div>
+        {bookCategory && (
+            <div>
+                {
+                    bookCategory.map((item, index)=>(
+                        <div>
+                            
+                            <button>
+                            <Link key={index} to={`/category/${item}`}>
+                            {item}
+                            </Link>
+                            </button>
+                        </div>
+                    ))
+                }
+            </div>
+        )
+        }
+    </div>
     </div>
 )
 }

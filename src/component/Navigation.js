@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { stored } from "../model/navArray";
+import { stored } from "../model/array";
 const Navigation = () => {
     return(
         <nav>
@@ -11,8 +11,6 @@ const Navigation = () => {
                         </div>
                     ))}
             </div>
-
-           
         </nav>
     )
 }

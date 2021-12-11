@@ -11,7 +11,6 @@ const HomePage =({info, Author, AddToStorage})=>{
                 <img src={info.volumeInfo.imageLinks.smallThumbnail}/>
                 <h2>{info.volumeInfo.title}</h2>
                  <h3>{Author(info.volumeInfo.authors) }</h3> 
-                 {/* categories */}
                 <h3>{Author(info.volumeInfo.categories) }</h3>       
             </Link>
                 <div>

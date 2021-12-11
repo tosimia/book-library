@@ -37,8 +37,7 @@ const AddToStorage = (book,quantity, storageName)=>{
 
 const authorOrCategory = (value) =>{   
     if(value !== undefined){
-        if(value.length >= 1){ 
-            console.log(value)           
+        if(value.length >= 1){           
       return value.map && value.map((item) => item)
    }
      }
