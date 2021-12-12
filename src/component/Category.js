@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { getCategory } from "../services";
-import HomePage from "./HomePage";
+import HomePage from "./Books";
 import Navigation from "./Navigation";
 import { bookCategory } from "../model/array"
 import { BookContext } from "../utils/store";
