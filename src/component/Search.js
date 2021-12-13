@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
-import {  getSearch} from "../services";
+import {  getSearch, getBook} from "../services";
 import { BookContext } from "../utils/store";
-
+import {BsSearch} from "react-icons/bs";
 const Search = () => {
     let value = useContext(BookContext)
      //the query for search api is key word
@@ -11,6 +11,7 @@ const Search = () => {
   const handleSubmit = (e)=>{
     e.preventDefault();
    searchedTypes(keyword, searchType)
+
 }
 
        
@@ -29,6 +30,9 @@ const Search = () => {
             case term = "inpublisher":
                 searchedBooks(search, term)
                 break
+            case term = "all":
+                findBooks(search)
+                break
             default:
                 return ""
 
@@ -41,12 +45,20 @@ const Search = () => {
             value.setBook(response.data.items)
         }
     }
+
+    const findBooks = async (search) =>{
+        const response = await getBook(search);
+        if (response){
+            value.setBook(response.data.items)
+        }
+    }
           
     return(
         <div>
             
             <form onSubmit={handleSubmit}>
-            <p>Search books by Author, subject, ...</p>
+            <p>Search by Books Title, Author, subject, ...</p>
+            <BsSearch/>
             <input
                 placeholder="Search.."
                 type = "text"
@@ -54,24 +66,39 @@ const Search = () => {
                 onChange={(e)=>setKeyword(e.target.value)}
             />
             <div>
-                <label>Search by</label>
-                <select 
+                
+            {/* <label>Search by</label> */}
+            <div 
                  value={searchType}
                 onChange={(e) => setSearchType(e.target.value)}
                 >
-                    <option>Search By</option>
-                    <option value="intitle">Title</option>
-                    <option value="inauthor">Author</option>
-                    <option value="subject">Subject</option>
-                    <option value="inpublisher">Publisher</option> 
-                </select>
+                    {/* <option>Search By</option> */}
+                    <input type="radio" value="all" name="input" />
+                    <label for="all">All</label>
+
+                    <input type="radio" value="intitle" name="input"/>
+                    <label for="intitle">Title</label>
+                    
+                    <input type="radio" value="inauthor" name="input"/>
+                    <label for="inauthor">Author</label>
+                    
+                    <input type="radio" value="subject" name = "input"/>
+                    <label for="subject">Subject</label>
+                   
+                    <input type="radio" value="inpublisher" name="input"/>
+                    <label for="inpublisher">Publisher</label>
+                    
+                </div> 
+            
 
           <input
             className="rounded p-2 shadow-sm text-white bg-pink-900"
             type="submit"
             value="submit"
           />
+
             </div>
+    
             </form>
         </div>
     )
