@@ -29,7 +29,7 @@ bookCategory.map((item)=>(
 
     return(
         <>
-        <Navigation/>
+        {/* <Navigation/> */}
         <div>{category && (
         <div>
             {category.map((item)=>{

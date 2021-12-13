@@ -58,7 +58,10 @@ const Search = () => {
             
             <form onSubmit={handleSubmit}>
             <p>Search by Books Title, Author, subject, ...</p>
-            <BsSearch/>
+            <button type="submit"
+            value="submit">
+            <BsSearch  />
+            </button>
             <input
                 placeholder="Search.."
                 type = "text"
@@ -67,12 +70,12 @@ const Search = () => {
             />
             <div>
                 
-            {/* <label>Search by</label> */}
+            
             <div 
                  value={searchType}
                 onChange={(e) => setSearchType(e.target.value)}
                 >
-                    {/* <option>Search By</option> */}
+                    
                     <input type="radio" value="all" name="input" />
                     <label for="all">All</label>
 
@@ -91,11 +94,11 @@ const Search = () => {
                 </div> 
             
 
-          <input
+          {/* <input
             className="rounded p-2 shadow-sm text-white bg-pink-900"
             type="submit"
             value="submit"
-          />
+          /> */}
 
             </div>
     
