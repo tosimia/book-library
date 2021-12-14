@@ -5,7 +5,7 @@ import Navigation from "./Navigation";
 import { stored } from "../model/array";
 import { useParams } from "react-router";
 const StorageContainer = () =>{
-    // const [stored] = useState([]) 
+    // const [stored] = useState([])  
     const [storedBook, setStoredbook] = useState([])
     const value = useContext(BookContext)
  const param = useParams()
