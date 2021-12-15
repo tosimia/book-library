@@ -1,4 +1,36 @@
+ *{
+    background-color: #ffffff;
+} 
+
 .grid-container{
     display: grid;
-    grid-template-columns: 0.8fr 80px;
+    grid-template-columns: 0.8fr 8px;
+    margin: 10px;
+}
+
+.book-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+   padding: 10px;
+
+}
+
+.author-container{
+    display: grid;
+    grid-template-rows: auto;
+    /* margin: 0px; */
+}
+
+.author-img{
+    width: 60px;
+    height: auto;
+}
+
+.genre-btn{
+    border: 2px solid #d3a3a3;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+    width: 100%;
 }

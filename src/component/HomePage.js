@@ -7,6 +7,7 @@ import Navigation from "./Navigation";
 import Search from "./Search";
 import Category from "./Category";
 import "./homePage.css";
+import "./book.css"
 const HomePage = () => {
   const value = useContext(BookContext);
 
@@ -16,9 +17,9 @@ const HomePage = () => {
         <div>
           <Search />
         </div>
-        <div>
+        <div >
           <h1>Recommended</h1>
-          <div>
+          <div >
             <Category />
           </div>
         </div>
@@ -27,9 +28,9 @@ const HomePage = () => {
         <div>
           <h1>All Books</h1>
         </div>
-        <div>
+        <div >
           {value.book && (
-            <div>
+            <div className="book-container">
               {value.book.map((item) => (
                 <div>
                   <Books
@@ -59,12 +60,18 @@ const HomePage = () => {
           <h1>Top Authors</h1>
           <div>
             {author && (
-              <div>
+              <div className="author-container">
                 {author.map((item, index) => (
-                  <div key={index}>
-                    <img src={item.image} />
+                  <div key={index} className="bk-container">
+                    <div>
+                    <img src={item.image} alt={item.author} className="author-img"/>
+                    </div>
+                    
+                    <div>
                     <p> {item.author}</p>
                     <p>{item.book}</p>
+                    </div>
+                    
                   </div>
                 ))}
               </div>
@@ -77,10 +84,10 @@ const HomePage = () => {
           <h1>Genres</h1>
         </div>
         {bookCategory && (
-          <div>
+          <div className="book-container">
             {bookCategory.map((item, index) => (
               <div>
-                <button>
+                <button className="genre-btn" >
                   <Link key={index} to={`/category/${item}`}>
                     {item}
                   </Link>
