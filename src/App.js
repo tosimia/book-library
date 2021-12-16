@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import StorageContainer from "./component/StorageContainer";
 import DisplayOnlyOneItem from "./component/DisplayOnlyOneItem";
 import Category from "./component/Category";
-
+import "./app.css"
 
 function App() {
 

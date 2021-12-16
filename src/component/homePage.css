@@ -23,8 +23,10 @@
 }
 
 .author-img{
-    width: 60px;
-    height: auto;
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .genre-btn{
@@ -34,3 +36,4 @@
     margin: 10px;
     width: 100%;
 }
+

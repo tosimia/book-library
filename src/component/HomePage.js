@@ -8,6 +8,10 @@ import Search from "./Search";
 import Category from "./Category";
 import "./homePage.css";
 import "./book.css"
+
+
+
+
 const HomePage = () => {
   const value = useContext(BookContext);
 
@@ -20,7 +24,7 @@ const HomePage = () => {
         <div >
           <h1>Recommended</h1>
           <div >
-            <Category />
+              <Category />  
           </div>
         </div>
 
@@ -51,7 +55,7 @@ const HomePage = () => {
 
       <div>
         <div>
-          <div>
+          <div className="author-text">
             <h2>Bookshelves</h2>
             <Navigation />
           </div>
@@ -67,8 +71,8 @@ const HomePage = () => {
                     <img src={item.image} alt={item.author} className="author-img"/>
                     </div>
                     
-                    <div>
-                    <p> {item.author}</p>
+                    <div className="author-text">
+                    <h4> {item.author}</h4>
                     <p>{item.book}</p>
                     </div>
                     

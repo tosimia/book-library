@@ -1,0 +1,20 @@
+a:link{
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover{
+    color: #5B5B5B;
+}
+
+p{
+    color: #5B5B5B;
+}
+
+
+/* img{
+    float: left;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+} */

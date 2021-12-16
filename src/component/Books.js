@@ -8,7 +8,7 @@ const Books = ({ info, Author, AddToStorage }) => {
         <img src={info.volumeInfo.imageLinks.thumbnail} />
       </div>
 
-      <div>
+      <div className="book-text">
         <Link to={`/book/${info.id}`} state={{ data: info }}>
           <h2>{info.volumeInfo.title}</h2>
           <h3>{Author(info.volumeInfo.authors)}</h3>
