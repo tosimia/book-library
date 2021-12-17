@@ -1,5 +1,5 @@
 export const stored = [
-    "Read", "Currently-Reading", "Want-to-read"
+    "Read", "Currently-Reading", "Want-to-Read"
 ];
 
 export const bookCategory = [

@@ -7,7 +7,7 @@ const Navigation = () => {
             <div>
                 {stored.map((data, index) => (
                         <div>
-                        <Link key={index} to={`/${data}`}>{data}</Link>
+                        <Link key={index} to={`/criteria/${data}`}>{data}</Link>
                         </div>
                     ))}
             </div>
