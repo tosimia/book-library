@@ -1,3 +1,7 @@
+a{
+    color: #000000;
+}
+
 a:link{
     text-decoration: none;
     color: #000000;
@@ -11,10 +15,7 @@ p{
     color: #5B5B5B;
 }
 
-
-/* img{
-    float: left;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-} */
+ a:active{
+    /* background-color: black; */
+    color: black;
+}  

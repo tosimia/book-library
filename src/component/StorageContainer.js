@@ -1,9 +1,10 @@
 import React, { useContext, useEffect, useState } from "react";
 import { BookContext } from "../utils/store";
-import BookList from "./BookList";
+import BookList from "./StorageBooks";
 import Navigation from "./Navigation";
 import { stored } from "../model/array";
 import { useParams } from "react-router";
+import "./homePage.css";
 const StorageContainer = () => {
   // const [stored] = useState([])
   const [storedBook, setStoredbook] = useState([]);
@@ -33,7 +34,7 @@ const StorageContainer = () => {
       <Navigation />
       <div>
         {storedBook && (
-          <div>
+          <div className="book-container">
             {storedBook.map((item) => {
               return (
                 <div>

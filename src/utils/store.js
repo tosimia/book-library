@@ -1,58 +1,58 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import data from "../model/book.json";
 export const BookContext = React.createContext();
 
-export default ({children}) =>{
-     const [book, setBook] = useState(data)
-    
-const AddToStorage = (book,quantity, storageName)=>{
-    
-   let storedBook = [];
+export default ({ children }) => {
+  const [book, setBook] = useState(data);
+  const [activePage, setCurrentPage] = useState(1);
+  const displayedBookPerPage = 6;
 
-   if (localStorage.getItem(storageName)){
-       storedBook = JSON.parse(localStorage.getItem(storageName))
-   }
-   let isAlreadyIn = false;
-   let number;
-   for(let i = storedBook.length -1; i >=0; i--){
-       if(storedBook[i].book.id === book.id){
-           isAlreadyIn = true;
-           number = i;
-           break;
-       }
-   }
-   if(isAlreadyIn){
-    
-    storedBook[number].quantity = storedBook[number].quantity + quantity;
+  const AddToStorage = (book, quantity, storageName) => {
+    let storedBook = [];
 
-   }else{
-       storedBook.push({
-           book: book,
-           quantity: quantity,
-       });
-   }
-   localStorage.setItem(storageName, JSON.stringify(storedBook));
-};
+    if (localStorage.getItem(storageName)) {
+      storedBook = JSON.parse(localStorage.getItem(storageName));
+    }
+    let isAlreadyIn = false;
+    let number;
+    for (let i = storedBook.length - 1; i >= 0; i--) {
+      if (storedBook[i].book.id === book.id) {
+        isAlreadyIn = true;
+        number = i;
+        break;
+      }
+    }
+    if (isAlreadyIn) {
+      storedBook[number].quantity = storedBook[number].quantity + quantity;
+    } else {
+      storedBook.push({
+        book: book,
+        quantity: quantity,
+      });
+    }
+    localStorage.setItem(storageName, JSON.stringify(storedBook));
+  };
 
+  const authorOrCategory = (value) => {
+    if (value !== undefined) {
+      if (value.length >= 1) {
+        return value.map && value.map((item) => item);
+      }
+    }
+  };
 
-const authorOrCategory = (value) =>{   
-    if(value !== undefined){
-        if(value.length >= 1){           
-      return value.map && value.map((item) => item)
-   }
-     }
-}
-const store = {
+  const indexOfLastBook = activePage * displayedBookPerPage;
+  const indexOfFirstBook = indexOfLastBook - displayedBookPerPage;
+  const currentBook = book.slice(indexOfFirstBook, indexOfLastBook);
+
+  const store = {
     authorOrCategory: authorOrCategory,
     book: book,
     AddToStorage: AddToStorage,
     setBook: setBook,
-   
-
+    currentBook,
+    activePage,
+    setCurrentPage,
+  };
+  return <BookContext.Provider value={store}>{children}</BookContext.Provider>;
 };
-return(
-<BookContext.Provider value={store}>
-    {children}
-</BookContext.Provider>
-)
-}

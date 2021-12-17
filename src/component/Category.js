@@ -11,7 +11,7 @@ const Category = () =>{
     const [category, setCategory] = useState([])
     const [type] = useState([])
     const param = useParams()
-    console.log(param)
+    // console.log(param)
         const categoryResult = async (term, category) =>{
             const response = await getCategory(term,category);
             if (response){
@@ -19,7 +19,7 @@ const Category = () =>{
             }
         }  
 
-    console.log(category)
+    // console.log(category)
 
 useEffect(() =>{
 bookCategory.map((item)=>(
