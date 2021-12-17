@@ -1,11 +1,16 @@
 import React, { useState } from "react";
 import data from "../model/book.json";
+import recommendedBooks from "../model/recommended.js";
 export const BookContext = React.createContext();
 
 export default ({ children }) => {
   const [book, setBook] = useState(data);
+  const [recommended, setRecommended] = useState(recommendedBooks);
   const [activePage, setCurrentPage] = useState(1);
   const displayedBookPerPage = 6;
+  const indexOfLastBook = activePage * displayedBookPerPage;
+  const indexOfFirstBook = indexOfLastBook - displayedBookPerPage;
+  const currentBook = book.slice(indexOfFirstBook, indexOfLastBook);
 
   const AddToStorage = (book, quantity, storageName) => {
     let storedBook = [];
@@ -33,26 +38,39 @@ export default ({ children }) => {
     localStorage.setItem(storageName, JSON.stringify(storedBook));
   };
 
-  const authorOrCategory = (value) => {
+  const author = (value) => {
     if (value !== undefined) {
       if (value.length >= 1) {
         return value.map && value.map((item) => item);
+      }else {
+        return value
       }
     }
   };
 
-  const indexOfLastBook = activePage * displayedBookPerPage;
-  const indexOfFirstBook = indexOfLastBook - displayedBookPerPage;
-  const currentBook = book.slice(indexOfFirstBook, indexOfLastBook);
-
+  const parseBook = (book) => {
+    console.log(book)
+    return book.map((item) => {
+      return {
+        image: item.volumeInfo.imageLinks.thumbnail,
+        author: item.volumeInfo.authors,
+        title: item.volumeInfo.title,
+        description: item.volumeInfo.description,
+        link: item.volumeInfo.infoLink,
+      };
+    });
+  };
   const store = {
-    authorOrCategory: authorOrCategory,
-    book: book,
+    author: author,
+    parseBook:parseBook,
+    book: parseBook(book),
     AddToStorage: AddToStorage,
     setBook: setBook,
-    currentBook,
-    activePage,
-    setCurrentPage,
+    currentBook: parseBook(currentBook),
+    activePage: activePage,
+    setCurrentPage: setCurrentPage,
+    recommended: recommended,
+    setRecommended: setRecommended,
   };
   return <BookContext.Provider value={store}>{children}</BookContext.Provider>;
 };

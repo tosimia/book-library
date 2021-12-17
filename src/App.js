@@ -18,6 +18,7 @@ function App() {
           <Route path ={`/:slug`} caseSensitive={false} element={<StorageContainer/>} />
           <Route path={`/book/:id`} caseSensitive={false} element={<DisplayOnlyOneItem/>}/>
           <Route path={`/category/:category`} caseSensitive={false} element={<Category/>}/>
+    
       </Routes>
     </BrowserRouter>
      </div>

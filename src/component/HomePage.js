@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import { BookContext } from "../utils/store";
 import { Link } from "react-router-dom";
-import { bookCategory, author, recommended } from "../model/array";
+import { bookCategory, author}from "../model/array";
 import Books from "./Books";
 import Navigation from "./Navigation";
 import Search from "./Search";
-import Category from "./Category";
 import BookPagination from "./Pagination";
 import "./homePage.css";
 import "./book.css";
+import RecommendedContainer from "./RecommendedContainer";
 
 const HomePage = () => {
   const value = useContext(BookContext);
@@ -23,7 +23,7 @@ const HomePage = () => {
           <div>
             <h1>Recommended</h1>
             <div>
-              <Category />{" "}
+              <RecommendedContainer />
             </div>
           </div>
 
@@ -39,7 +39,7 @@ const HomePage = () => {
                       <Books
                         info={item}
                         AddToStorage={value.AddToStorage}
-                        Author={value.authorOrCategory}
+                        author={value.author}
                       />
                     </div>
                   ))}

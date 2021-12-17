@@ -3,6 +3,7 @@ import { BookContext } from "../utils/store";
 import { useContext, useState } from "react";
 import Navigation from "./Navigation";
 import "./book.css";
+import "./homePage.css";
 const DisplayOnlyOneItem = () => {
   const [showMore, setShowMore] = useState(false);
   const value = useContext(BookContext);
@@ -17,18 +18,21 @@ const DisplayOnlyOneItem = () => {
   }
 
   const description = () => {
-    const text = info.volumeInfo.description;
+    const text = info.description;
     if (!text) return "";
     if (text.length < 250) {
-      return <p>{text}</p>;
+      return <p className="book-description">{text}</p>;
     } else {
       return (
         <div>
           {/*if showMore is true, it will show the text. If showMore is false, only 250 characters will be shown */}
-          <p>
+          <p className="book-description">
             {showMore ? text : `${text.substring(0, 250)}`}
-            <button onClick={() => setShowMore(!showMore)}>
-              {showMore ? "Show less" : "Show more"}
+            <button
+              className="btn-more-less"
+              onClick={() => setShowMore(!showMore)}
+            >
+              {showMore ? "...less" : "...more"}
             </button>
           </p>
         </div>
@@ -41,38 +45,43 @@ const DisplayOnlyOneItem = () => {
       <Navigation />
 
       <div key={location.key} className="only-one-item-container">
-        <img src={info.volumeInfo.imageLinks.smallThumbnail} />
-        <h2>{info.volumeInfo.title}</h2>
-        <h3>{value.authorOrCategory(info.volumeInfo.authors)}</h3>
-        <p>{value.authorOrCategory(info.volumeInfo.categories)}</p>
-        <>{description()}</>
-        {/* <p>{info.searchInfo.textSnippet}</p>  */}
-        <p>{info.categories}</p>
-        <a href={info.accessInfo.pdf.acsTokenLink}>Download pdf</a>
-        <a href={info.volumeInfo.infoLink}>Google link</a>
-        <button
-          onClick={() => {
-            value.AddToStorage(info, "Currently-Reading");
-          }}
-        >
-          Currently Reading
-        </button>
-        <button
-          onClick={() => {
-            value.AddToStorage(info, 1, "Read");
-          }}
-        >
-          Read
-        </button>
-        <button
-          onClick={() => {
-            value.AddToStorage(info, 1, "Want-to-Read");
-          }}
-        >
-          Want to read
-        </button>
+        <div>
+          <img src={info.image} />
+          <h2>{info.title}</h2>
+          {/* <h3>{value.author(info.author)}</h3> */}
+          <h3>{info.author}</h3>
+          <>{description()}</>
+          
+          <button className="book-btn">
+            <a href={info.link}>Google link</a>
+          </button>
+
+          <button
+            className="book-btn"
+            onClick={() => {
+              value.AddToStorage(info, "Currently-Reading");
+            }}
+          >
+            Currently Reading
+          </button>
+          <button
+            className="book-btn"
+            onClick={() => {
+              value.AddToStorage(info, 1, "Read");
+            }}
+          >
+            Read
+          </button>
+          <button
+            className="book-btn"
+            onClick={() => {
+              value.AddToStorage(info, 1, "Want-to-Read");
+            }}
+          >
+            Want to read
+          </button>
+        </div>
       </div>
-      
     </div>
   );
 };
