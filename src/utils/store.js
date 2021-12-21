@@ -12,7 +12,7 @@ export default ({ children }) => {
   const indexOfFirstBook = indexOfLastBook - displayedBookPerPage;
   const currentBook = book.slice(indexOfFirstBook, indexOfLastBook);
 
-  const AddToStorage = (book, quantity, storageName) => {
+  const addToStorage = (book, quantity, storageName) => {
     let storedBook = [];
 
     if (localStorage.getItem(storageName)) {
@@ -42,17 +42,17 @@ export default ({ children }) => {
     if (value !== undefined) {
       if (value.length >= 1) {
         return value.map && value.map((item) => item);
-      }else {
-        return value
+      } else {
+        return value;
       }
     }
   };
 
   const parseBook = (book) => {
-    console.log(book)
     return book.map((item) => {
       return {
-        image: item.volumeInfo.imageLinks.thumbnail,
+        image:
+          item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.thumbnail,
         author: item.volumeInfo.authors,
         title: item.volumeInfo.title,
         description: item.volumeInfo.description,
@@ -62,9 +62,9 @@ export default ({ children }) => {
   };
   const store = {
     author: author,
-    parseBook:parseBook,
+    parseBook: parseBook,
     book: parseBook(book),
-    AddToStorage: AddToStorage,
+    addToStorage: addToStorage,
     setBook: setBook,
     currentBook: parseBook(currentBook),
     activePage: activePage,

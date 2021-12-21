@@ -1,7 +1,7 @@
 import Pagination from "react-js-pagination";
 import { useState, useContext } from "react";
 import { BookContext } from "../utils/store";
-import "./pagination.css"
+import "./pagination.css";
 
 const BookPagination = () => {
   const value = useContext(BookContext);

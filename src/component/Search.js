@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import { getSearch, getBook } from "../services";
 import { BookContext } from "../utils/store";
 import { BsSearch } from "react-icons/bs";
-import "./search.css"
+import "./search.css";
 const Search = () => {
   let value = useContext(BookContext);
   //the query for search api is key word
@@ -38,6 +38,7 @@ const Search = () => {
 
   const searchedBooks = async (search, item) => {
     const response = await getSearch(search, item);
+
     if (response) {
       value.setBook(response.data.items);
     }
@@ -55,7 +56,7 @@ const Search = () => {
       <form onSubmit={handleSubmit} className="form-container">
         {/* <p>Search by Books Title, Author, subject, ...</p> */}
         <button className="search-btn" type="submit" value="submit">
-          <BsSearch className="search-icon"/>
+          <BsSearch className="search-icon" />
         </button>
         <input
           placeholder="Search by Books, Author ..."
@@ -83,12 +84,6 @@ const Search = () => {
             <input type="radio" value="inpublisher" name="input" />
             <label for="inpublisher">Publisher</label>
           </div>
-
-          {/* <input
-            className="rounded p-2 shadow-sm text-white bg-pink-900"
-            type="submit"
-            value="submit"
-          /> */}
         </div>
       </form>
     </div>

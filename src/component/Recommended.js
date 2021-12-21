@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import "./book.css"
+import "./book.css";
 import "./recommended.css";
-const Recommended = ({ info, AddToStorage }) => {
+const Recommended = ({ info, addToStorage }) => {
   return (
     <div className="card">
       <div>
-        <img src={info.image} className="re-img"/>
+        <img src={info.image} className="re-img" />
       </div>
 
       <div className="book-text">
@@ -17,7 +17,7 @@ const Recommended = ({ info, AddToStorage }) => {
         <button
           className="book-btn"
           onClick={() => {
-            AddToStorage(info, 1, "Currently-Reading");
+            addToStorage(info, 1, "Currently-Reading");
           }}
         >
           Currently Reading
@@ -25,7 +25,7 @@ const Recommended = ({ info, AddToStorage }) => {
         <button
           className="book-btn"
           onClick={() => {
-            AddToStorage(info, 1, "Read");
+            addToStorage(info, 1, "Read");
           }}
         >
           Read
@@ -33,7 +33,7 @@ const Recommended = ({ info, AddToStorage }) => {
         <button
           className="book-btn"
           onClick={() => {
-            AddToStorage(info, 1, "Want-to-Read");
+            addToStorage(info, 1, "Want-to-Read");
           }}
         >
           Want to read

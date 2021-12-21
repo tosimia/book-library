@@ -1,21 +1,21 @@
-a{
-    color: #000000;
+a {
+  color: #000000;
 }
 
-a:link{
-    text-decoration: none;
-    color: #000000;
+a:link {
+  text-decoration: none;
+  color: #000000;
 }
 
-a:hover{
-    color: #5B5B5B;
+a:hover {
+  color: #5b5b5b;
 }
 
-p{
-    color: #5B5B5B;
+p {
+  color: #5b5b5b;
 }
 
- a:active{
-    /* background-color: black; */
-    color: black;
-}  
+a:active {
+  /* background-color: black; */
+  color: #000000;
+}

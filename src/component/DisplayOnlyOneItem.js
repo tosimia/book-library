@@ -51,7 +51,7 @@ const DisplayOnlyOneItem = () => {
           {/* <h3>{value.author(info.author)}</h3> */}
           <h3>{info.author}</h3>
           <>{description()}</>
-          
+
           <button className="book-btn">
             <a href={info.link}>Google link</a>
           </button>
@@ -59,7 +59,7 @@ const DisplayOnlyOneItem = () => {
           <button
             className="book-btn"
             onClick={() => {
-              value.AddToStorage(info, "Currently-Reading");
+              value.addToStorage(info, "Currently-Reading");
             }}
           >
             Currently Reading
@@ -67,7 +67,7 @@ const DisplayOnlyOneItem = () => {
           <button
             className="book-btn"
             onClick={() => {
-              value.AddToStorage(info, 1, "Read");
+              value.addToStorage(info, 1, "Read");
             }}
           >
             Read
@@ -75,7 +75,7 @@ const DisplayOnlyOneItem = () => {
           <button
             className="book-btn"
             onClick={() => {
-              value.AddToStorage(info, 1, "Want-to-Read");
+              value.addToStorage(info, 1, "Want-to-Read");
             }}
           >
             Want to read

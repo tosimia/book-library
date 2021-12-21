@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { BookContext } from "../utils/store";
 import { Link } from "react-router-dom";
-import { bookCategory, author}from "../model/array";
+import { bookCategory, author } from "../model/array";
 import Books from "./Books";
 import Navigation from "./Navigation";
 import Search from "./Search";
@@ -38,7 +38,7 @@ const HomePage = () => {
                     <div>
                       <Books
                         info={item}
-                        AddToStorage={value.AddToStorage}
+                        addToStorage={value.addToStorage}
                         author={value.author}
                       />
                     </div>

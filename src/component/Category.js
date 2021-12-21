@@ -9,25 +9,32 @@ import "./homePage.css";
 const Category = () => {
   const value = useContext(BookContext);
   const [category, setCategory] = useState([]);
-  const [type] = useState([]);
+
   const param = useParams();
-  // console.log(param)
+
   const categoryResult = async (term, category) => {
     const response = await getCategory(term, category);
     if (response) {
-      setCategory(response.data.items);
+      const book = value.parseBook(response.data.items);
+      setCategory(book);
     }
   };
 
-  // console.log(category)
+  const isCategory = () => {
+    bookCategory.filter((item) => {
+      if (param.category === item) {
+        categoryResult("subject", item);
+      }
+    });
+  };
 
   useEffect(() => {
-    bookCategory.map((item) => categoryResult("subject", item));
+    isCategory();
   }, []);
 
   return (
     <>
-      {/* <Navigation/> */}
+      <Navigation />
       <div>
         {category && (
           <div className="book-container">
@@ -36,8 +43,8 @@ const Category = () => {
                 <div>
                   <Books
                     info={item}
-                    AddToStorage={value.AddToStorage}
-                    Author={value.authorOrCategory}
+                    addToStorage={value.addToStorage}
+                    author={value.author}
                   />
                 </div>
               );

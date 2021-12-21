@@ -12,7 +12,7 @@ const RecommendedContainer = () => {
           {value.recommended.map((item) => {
             return (
               <div>
-                <Recommended info={item} AddToStorage={value.AddToStorage} />
+                <Recommended info={item} addToStorage={value.addToStorage} />
               </div>
             );
           })}

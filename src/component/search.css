@@ -1,17 +1,18 @@
-input[type=text]{
-    background: transparent;
-    border: 8px none;
-    padding-top: 0px;
-    padding-bottom: 30px;
-    padding-right: 60px; 
-    font-size: 25px;
-   
-
+input[type="text"] {
+  background: transparent;
+  border: none;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  font-size: 25px;
 }
 
-input[type=text]:focus{
-    outline: none;
-    
+input[type="text"]:focus {
+  /* outline: none; */
+  border: 2px solid #5b5b5b;
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-bottom: 15px;
 }
 
 /* input:placeholder-shown{
@@ -19,17 +20,16 @@ input[type=text]:focus{
     color:  red;
 } */
 
-.search-btn{
-    background: transparent;
-    border: none;
-
+.search-btn {
+  background: transparent;
+  border: none;
 }
 
-.search-icon{
-    width: 20px;
-    height: 20px;
-} 
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
 
-.form-container{
-    margin: 30px 15px;
+.form-container {
+  margin: 30px 15px;
 }

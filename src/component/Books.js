@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import "./book.css"
+import "./book.css";
 
-const Books = ({ info, author, AddToStorage }) => {
-  console.log(info)
+const Books = ({ info, author, addToStorage }) => {
   return (
     <div className="bk-container">
-      <div >
+      <div>
         <img src={info.image} />
       </div>
 
@@ -16,32 +15,31 @@ const Books = ({ info, author, AddToStorage }) => {
         </Link>
         <div>
           <button
-          className="book-btn"
+            className="book-btn"
             onClick={() => {
-              AddToStorage(info, 1, "Currently-Reading");
+              addToStorage(info, 1, "Currently-Reading");
             }}
           >
             Currently Reading
           </button>
           <button
-          className="book-btn"
+            className="book-btn"
             onClick={() => {
-              AddToStorage(info, 1, "Read");
+              addToStorage(info, 1, "Read");
             }}
           >
             Read
           </button>
           <button
-          className="book-btn"
+            className="book-btn"
             onClick={() => {
-              AddToStorage(info, 1, "Want-to-Read");
+              addToStorage(info, 1, "Want-to-Read");
             }}
           >
             Want to read
           </button>
         </div>
       </div>
-
     </div>
   );
 };

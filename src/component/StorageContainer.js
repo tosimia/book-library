@@ -6,17 +6,14 @@ import { stored } from "../model/array";
 import { useParams } from "react-router";
 import "./homePage.css";
 const StorageContainer = () => {
-  // const [stored] = useState([])
   const [storedBook, setStoredbook] = useState([]);
   const value = useContext(BookContext);
   const param = useParams();
-  console.log(param.slug);
 
   const getBooksFromStorage = () => {
     if (param.slug === "Read") {
       return setStoredbook(JSON.parse(localStorage.getItem("Read")));
-    }
-    if (param.slug === "Want-to-Read") {
+    } else if (param.slug === "Want-to-Read") {
       return setStoredbook(JSON.parse(localStorage.getItem("Want-to-Read")));
     } else if (param.slug === "Currently-Reading") {
       return setStoredbook(
