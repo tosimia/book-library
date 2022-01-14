@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from "react";
 import { BookContext } from "../utils/store";
 import StorageBooks from "./StorageBooks";
 import Navigation from "./Navigation";
-import { stored } from "../model/array";
 import { useParams } from "react-router";
 import "./homePage.css";
 const StorageContainer = () => {
@@ -35,7 +34,7 @@ const StorageContainer = () => {
             {storedBook.map((item) => {
               return (
                 <div>
-                  <StorageBooks info={item.book} author={value.author} />
+                  <StorageBooks info={item.book} author={value.author} param = {param} addToStorage = {value.addToStorage}/>
                 </div>
               );
             })}

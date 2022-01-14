@@ -38,6 +38,16 @@ export default ({ children }) => {
     localStorage.setItem(storageName, JSON.stringify(storedBook));
   };
 
+  const removeBookFromStorage = (storageName, bookId) => {
+   
+     let storedBook = JSON.parse(localStorage.getItem(storageName));
+    
+    let removeBook = storedBook.filter((item) =>{
+      return item.book.id !== bookId
+    })
+     localStorage.removeItem(storageName, JSON.stringify(removeBook));
+  };
+
   const author = (value) => {
     if (value !== undefined) {
       if (value.length >= 1) {
@@ -71,6 +81,7 @@ export default ({ children }) => {
     setCurrentPage: setCurrentPage,
     recommended: recommended,
     setRecommended: setRecommended,
+    deleteBook: removeBookFromStorage,
   };
   return <BookContext.Provider value={store}>{children}</BookContext.Provider>;
 };
