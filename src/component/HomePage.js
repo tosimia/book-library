@@ -36,11 +36,7 @@ const HomePage = () => {
                 <div className="book-container">
                   {value.currentBook.map((item) => (
                     <div>
-                      <Books
-                        info={item}
-                        addToStorage={value.addToStorage}
-                        author={value.author}
-                      />
+                      <Books info={item} bookStatus={value.bookStatus} />
                     </div>
                   ))}
                 </div>

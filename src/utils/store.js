@@ -59,6 +59,37 @@ export default ({ children }) => {
     }
   };
 
+  const bookStatus = (info) => {
+    return (
+      <div>
+        <button
+          className="book-btn"
+          onClick={() => {
+            addToStorage(info, 1, "Currently-Reading");
+          }}
+        >
+          Currently Reading
+        </button>
+        <button
+          className="book-btn"
+          onClick={() => {
+            addToStorage(info, 1, "Read");
+          }}
+        >
+          Read
+        </button>
+        <button
+          className="book-btn"
+          onClick={() => {
+            addToStorage(info, 1, "Want-to-Read");
+          }}
+        >
+          Want to read
+        </button>
+      </div>
+    );
+  };
+
   const parseBook = (book) => {
     return book.map((item) => {
       return {
@@ -83,6 +114,7 @@ export default ({ children }) => {
     recommended: recommended,
     setRecommended: setRecommended,
     removeBookFromStorage: removeBookFromStorage,
+    bookStatus: bookStatus,
   };
   return <BookContext.Provider value={store}>{children}</BookContext.Provider>;
 };

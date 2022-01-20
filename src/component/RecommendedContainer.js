@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { BookContext } from "../utils/store";
-import Recommended from "./Recommended";
+import Books from "./Books";
 import "./homePage.css";
-import "./recommended.css";
+import "./recommended.css"
 import Carousel from "react-elastic-carousel";
 const RecommendedContainer = () => {
   const value = useContext(BookContext);
@@ -21,7 +21,7 @@ const RecommendedContainer = () => {
             {value.recommended.map((item) => {
               return (
                 <div>
-                  <Recommended info={item} addToStorage={value.addToStorage} />
+                  <Books info={item} bookStatus={value.bookStatus} />
                 </div>
               );
             })}

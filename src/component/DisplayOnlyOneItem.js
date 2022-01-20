@@ -40,6 +40,7 @@ const DisplayOnlyOneItem = () => {
     }
   };
 
+
   return (
     <div>
       <Navigation />
@@ -47,39 +48,15 @@ const DisplayOnlyOneItem = () => {
       <div key={location.key} className="only-one-item-container">
         <div>
           <img src={info.image} />
-          <h2>{info.title}</h2>
-          {/* <h3>{value.author(info.author)}</h3> */}
-          <h3>{info.author}</h3>
+          <h2 className="capitalize">{info.title}</h2>
+          <h3 className="capitalize">{typeof info.author === "object"? info.author.join(", "): info.author}</h3>
           <>{description()}</>
 
           <button className="book-btn">
             <a href={info.link}>Google link</a>
           </button>
 
-          <button
-            className="book-btn"
-            onClick={() => {
-              value.addToStorage(info, "Currently-Reading");
-            }}
-          >
-            Currently Reading
-          </button>
-          <button
-            className="book-btn"
-            onClick={() => {
-              value.addToStorage(info, 1, "Read");
-            }}
-          >
-            Read
-          </button>
-          <button
-            className="book-btn"
-            onClick={() => {
-              value.addToStorage(info, 1, "Want-to-Read");
-            }}
-          >
-            Want to read
-          </button>
+          <>{value.bookStatus(info)}</>
         </div>
       </div>
     </div>

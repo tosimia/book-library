@@ -43,8 +43,8 @@ const Category = () => {
                 <div>
                   <Books
                     info={item}
-                    addToStorage={value.addToStorage}
-                    author={value.author}
+                    bookStatus={value.bookStatus}
+                    
                   />
                 </div>
               );

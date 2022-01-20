@@ -1,9 +1,9 @@
 .bk-container {
-   display: grid;
+  display: grid;
   grid-template-columns: auto auto;
-  margin-top: 20px;  
-  
+  margin-top: 20px;
 }
+
 
 .book-btn {
   border: 1px solid #d3a3a3;
@@ -59,9 +59,10 @@
   float: left;
   width: 150px;
   height: 250px;
-  object-fit: cover;
+  object-fit: cover; 
+  margin-right: 10px;
 }
 
-.capitalize{
-  text-transform: capitalize; 
+.capitalize {
+  text-transform: capitalize;
 }
