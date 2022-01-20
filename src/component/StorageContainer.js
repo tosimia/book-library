@@ -34,7 +34,7 @@ const StorageContainer = () => {
             {storedBook.map((item) => {
               return (
                 <div>
-                  <StorageBooks info={item.book} author={value.author} param = {param} addToStorage = {value.addToStorage}/>
+                  <StorageBooks info={item.book} author={value.author} param = {param} addToStorage = {value.addToStorage} removeBookFromStorage = {value.removeBookFromStorage}/>
                 </div>
               );
             })}

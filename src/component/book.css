@@ -1,7 +1,8 @@
 .bk-container {
-  display: grid;
+   display: grid;
   grid-template-columns: auto auto;
-  /* padding: 5px; */
+  margin-top: 20px;  
+  
 }
 
 .book-btn {
@@ -59,4 +60,8 @@
   width: 150px;
   height: 250px;
   object-fit: cover;
+}
+
+.capitalize{
+  text-transform: capitalize; 
 }

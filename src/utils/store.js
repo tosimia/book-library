@@ -20,6 +20,7 @@ export default ({ children }) => {
     }
     let isAlreadyIn = false;
     let number;
+
     for (let i = storedBook.length - 1; i >= 0; i--) {
       if (storedBook[i].book.id === book.id) {
         isAlreadyIn = true;
@@ -35,17 +36,17 @@ export default ({ children }) => {
         quantity: quantity,
       });
     }
+
     localStorage.setItem(storageName, JSON.stringify(storedBook));
   };
 
   const removeBookFromStorage = (storageName, bookId) => {
-   
-     let storedBook = JSON.parse(localStorage.getItem(storageName));
-    
-    let removeBook = storedBook.filter((item) =>{
-      return item.book.id !== bookId
-    })
-     localStorage.removeItem(storageName, JSON.stringify(removeBook));
+    let storedBook = JSON.parse(localStorage.getItem(storageName));
+    let removeBook = storedBook.filter((item) => {
+      return item.book.id !== bookId.id;
+    });
+
+    localStorage.setItem(storageName, JSON.stringify(removeBook));
   };
 
   const author = (value) => {
@@ -81,7 +82,7 @@ export default ({ children }) => {
     setCurrentPage: setCurrentPage,
     recommended: recommended,
     setRecommended: setRecommended,
-    deleteBook: removeBookFromStorage,
+    removeBookFromStorage: removeBookFromStorage,
   };
   return <BookContext.Provider value={store}>{children}</BookContext.Provider>;
 };

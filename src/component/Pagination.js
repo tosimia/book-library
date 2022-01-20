@@ -1,5 +1,5 @@
 import Pagination from "react-js-pagination";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { BookContext } from "../utils/store";
 import "./pagination.css";
 

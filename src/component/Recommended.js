@@ -3,15 +3,15 @@ import "./book.css";
 import "./recommended.css";
 const Recommended = ({ info, addToStorage }) => {
   return (
-    <div className="card">
+    <div className="card" >
       <div>
         <img src={info.image} className="re-img" />
       </div>
 
       <div className="book-text">
         <Link to={`/book/${info.id}`} state={{ data: info }}>
-          <h2>{info.title}</h2>
-          <h3>{info.author}</h3>
+          <h2 className="capitalize">{info.title}</h2>
+          <h3 className="capitalize">{info.author}</h3>
         </Link>
 
         <button

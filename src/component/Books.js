@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./book.css";
 
-const Books = ({ info, author, addToStorage }) => {
+const Books = ({ info, addToStorage }) => {
   return (
     <div className="bk-container">
       <div>
@@ -11,7 +11,7 @@ const Books = ({ info, author, addToStorage }) => {
       <div className="book-text">
         <Link to={`/book/${info.id}`} state={{ data: info }}>
           <h2>{info.title}</h2>
-          <h3>{author(info.author)}</h3>
+          <h3 className="capitalize">{info.author.join(", ")}</h3>
         </Link>
         <div>
           <button
