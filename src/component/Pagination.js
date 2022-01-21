@@ -7,7 +7,6 @@ const BookPagination = () => {
   const value = useContext(BookContext);
 
   const handlePageChange = (pageNumber) => {
-    console.log(`active page is ${pageNumber}`);
     value.setCurrentPage(pageNumber);
   };
 

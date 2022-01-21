@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { BookContext } from "../utils/store";
 import Books from "./Books";
 import "./homePage.css";
-import "./recommended.css"
 import Carousel from "react-elastic-carousel";
 const RecommendedContainer = () => {
   const value = useContext(BookContext);
