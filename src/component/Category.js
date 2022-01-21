@@ -38,14 +38,10 @@ const Category = () => {
       <div>
         {category && (
           <div className="book-container">
-            {category.map((item) => {
+            {category.map((item, index) => {
               return (
-                <div>
-                  <Books
-                    info={item}
-                    bookStatus={value.bookStatus}
-                    
-                  />
+                <div key={index}>
+                  <Books info={item} bookStatus={value.bookStatus} />
                 </div>
               );
             })}

@@ -6,12 +6,8 @@ const Navigation = () => {
       <Link to="/">Home</Link>
       <div>
         {stored.map((data, index) => (
-          <div>
-            <Link
-              key={index}
-              onClick={window.location.reload}
-              to={`/criteria/${data}`}
-            >
+          <div key={index}>
+            <Link onClick={window.location.reload} to={`/criteria/${data}`}>
               {data}
             </Link>
           </div>

@@ -18,7 +18,7 @@
 .author-container {
   display: grid;
   grid-template-rows: auto;
-  /* margin: 0px; */
+  
 }
 
 .author-img {
@@ -34,4 +34,9 @@
   padding: 8px;
   margin: 10px;
   width: 100%;
+}
+
+.genre-btn:hover{
+  background-color: #5b5b5b;
+  border: 2px solid #5b5b5b;
 }

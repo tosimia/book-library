@@ -3,7 +3,7 @@ import data from "../model/book.json";
 import recommendedBooks from "../model/recommended.js";
 export const BookContext = React.createContext();
 
-export default ({ children }) => {
+const Store = ({ children }) => {
   const [book, setBook] = useState(data);
   const [recommended, setRecommended] = useState(recommendedBooks);
   const [activePage, setCurrentPage] = useState(1);
@@ -66,6 +66,7 @@ export default ({ children }) => {
           className="book-btn"
           onClick={() => {
             addToStorage(info, 1, "Currently-Reading");
+            // removeBookFromStorage("currently-Reading", info);
           }}
         >
           Currently Reading
@@ -95,6 +96,7 @@ export default ({ children }) => {
       return {
         image:
           item.volumeInfo.imageLinks && item.volumeInfo.imageLinks.thumbnail,
+        id: item.id,
         author: item.volumeInfo.authors,
         title: item.volumeInfo.title,
         description: item.volumeInfo.description,
@@ -118,3 +120,5 @@ export default ({ children }) => {
   };
   return <BookContext.Provider value={store}>{children}</BookContext.Provider>;
 };
+
+export default Store;

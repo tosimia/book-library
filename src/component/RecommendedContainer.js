@@ -13,13 +13,13 @@ const RecommendedContainer = () => {
   ];
 
   return (
-    <div >
+    <div>
       {value.recommended && (
         <div>
           <Carousel breakPoints={breakPoints}>
-            {value.recommended.map((item) => {
+            {value.recommended.map((item, index) => {
               return (
-                <div>
+                <div key={index}>
                   <Books info={item} bookStatus={value.bookStatus} />
                 </div>
               );

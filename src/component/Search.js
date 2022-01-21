@@ -54,7 +54,6 @@ const Search = () => {
   return (
     <div>
       <form onSubmit={handleSubmit} className="form-container">
-        {/* <p>Search by Books Title, Author, subject, ...</p> */}
         <button className="search-btn" type="submit" value="submit">
           <BsSearch className="search-icon" />
         </button>
@@ -70,19 +69,19 @@ const Search = () => {
             onChange={(e) => setSearchType(e.target.value)}
           >
             <input type="radio" value="all" name="input" />
-            <label for="all">All</label>
+            <label htmlFor="all">All</label>
 
             <input type="radio" value="intitle" name="input" />
-            <label for="intitle">Title</label>
+            <label htmlFor="intitle">Title</label>
 
             <input type="radio" value="inauthor" name="input" />
-            <label for="inauthor">Author</label>
+            <label htmlFor="inauthor">Author</label>
 
             <input type="radio" value="subject" name="input" />
-            <label for="subject">Subject</label>
+            <label htmlFor="subject">Subject</label>
 
             <input type="radio" value="inpublisher" name="input" />
-            <label for="inpublisher">Publisher</label>
+            <label htmlFor="inpublisher">Publisher</label>
           </div>
         </div>
       </form>

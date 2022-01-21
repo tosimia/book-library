@@ -34,8 +34,8 @@ const HomePage = () => {
             <div>
               {value.currentBook && (
                 <div className="book-container">
-                  {value.currentBook.map((item) => (
-                    <div>
+                  {value.currentBook.map((item, index) => (
+                    <div key={index}>
                       <Books info={item} bookStatus={value.bookStatus} />
                     </div>
                   ))}
@@ -85,11 +85,9 @@ const HomePage = () => {
             {bookCategory && (
               <div className="book-container">
                 {bookCategory.map((item, index) => (
-                  <div>
+                  <div key={index}>
                     <button className="genre-btn">
-                      <Link key={index} to={`/category/${item}`}>
-                        {item}
-                      </Link>
+                      <Link to={`/category/${item}`}>{item}</Link>
                     </button>
                   </div>
                 ))}

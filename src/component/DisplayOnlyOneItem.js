@@ -40,20 +40,25 @@ const DisplayOnlyOneItem = () => {
     }
   };
 
-
   return (
     <div>
       <Navigation />
 
       <div key={location.key} className="only-one-item-container">
         <div>
-          <img src={info.image} />
+          <img src={info.image} alt={info.title} />
           <h2 className="capitalize">{info.title}</h2>
-          <h3 className="capitalize">{typeof info.author === "object"? info.author.join(", "): info.author}</h3>
+          <h3 className="capitalize">
+            {typeof info.author === "object"
+              ? info.author.join(", ")
+              : info.author}
+          </h3>
           <>{description()}</>
 
           <button className="book-btn">
-            <a href={info.link}>Google link</a>
+            <a href={info.link} target="_blank" rel="noreferrer">
+              Google link
+            </a>
           </button>
 
           <>{value.bookStatus(info)}</>
