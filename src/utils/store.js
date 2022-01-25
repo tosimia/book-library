@@ -15,6 +15,10 @@ const Store = ({ children }) => {
   const addToStorage = (book, quantity, storageName) => {
     let storedBook = [];
 
+    let bookCurrentStorage = getBookStatus(book.id);
+
+    if (bookCurrentStorage) removeBookFromStorage(bookCurrentStorage, book.id);
+
     if (localStorage.getItem(storageName)) {
       storedBook = JSON.parse(localStorage.getItem(storageName));
     }
@@ -40,10 +44,23 @@ const Store = ({ children }) => {
     localStorage.setItem(storageName, JSON.stringify(storedBook));
   };
 
+  const getBookStatus = (bookId) => {
+    let currentBookState = undefined;
+    const bookStates = ["Read", "Currently-Reading", "Want-to-Read"];
+
+    for(const bookStatus of bookStates){
+      if(localStorage.getItem(bookStatus)){
+        const searchedBooks = JSON.parse(localStorage.getItem(bookStatus)).find(({book}) => book.id === bookId);
+        if(searchedBooks) currentBookState = bookStatus;
+      }
+      if(currentBookState)break;
+    }
+return currentBookState; 
+  };
   const removeBookFromStorage = (storageName, bookId) => {
     let storedBook = JSON.parse(localStorage.getItem(storageName));
     let removeBook = storedBook.filter((item) => {
-      return item.book.id !== bookId.id;
+      return item.book.id !== bookId;
     });
 
     localStorage.setItem(storageName, JSON.stringify(removeBook));
@@ -66,7 +83,7 @@ const Store = ({ children }) => {
           className="book-btn"
           onClick={() => {
             addToStorage(info, 1, "Currently-Reading");
-            // removeBookFromStorage("currently-Reading", info);
+          
           }}
         >
           Currently Reading
