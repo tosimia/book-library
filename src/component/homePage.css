@@ -1,6 +1,4 @@
-* {
-  background-color: #ffffff;
-}
+
 
 .grid-container {
   display: grid;
@@ -14,11 +12,16 @@
   grid-gap: 10px;
   padding: 10px;
 }
+.genre-container{
+  display: grid;
+  grid-template-columns: auto auto;
+   grid-gap: 10px;
+  /*padding: 5px; */
+}
 
 .author-container {
   display: grid;
   grid-template-rows: auto;
-  
 }
 
 .author-img {
@@ -36,7 +39,9 @@
   width: 100%;
 }
 
-.genre-btn:hover{
+.genre-btn:hover {
   background-color: #5b5b5b;
   border: 2px solid #5b5b5b;
 }
+
+

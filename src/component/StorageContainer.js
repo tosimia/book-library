@@ -25,27 +25,29 @@ const StorageContainer = () => {
     getBooksFromStorage();
   }, []);
 
+  const allBooksArray = [value.recommended, value.currentBook, value.category];
+
   return (
     <div>
-      <Navigation />
-      <div>
-        {storedBook && (
-          <div className="book-container">
-            {storedBook.map((item) => {
-              return (
-                <div>
-                   <Books
-                  info={item.book}
-                  bookStatus={value.bookStatus}
-                  /> 
-                  
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </div>
+    <Navigation />
+    <div>
+      {storedBook && (
+        <div className="book-container">
+          {storedBook.map((item, index) => {
+            return (
+              <div key={index}>
+                 <Books
+                info={item.book}
+                bookStatus={value.bookStatus}
+                /> 
+                
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
+  </div>
   );
 };
 

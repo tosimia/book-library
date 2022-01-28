@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import data from "../model/book.json";
 import recommendedBooks from "../model/recommended.js";
+import { getCategory } from "../services";
 export const BookContext = React.createContext();
 
 const Store = ({ children }) => {
   const [book, setBook] = useState(data);
   const [recommended, setRecommended] = useState(recommendedBooks);
   const [activePage, setCurrentPage] = useState(1);
+  const [category, setCategory] = useState([]);
   const displayedBookPerPage = 6;
   const indexOfLastBook = activePage * displayedBookPerPage;
   const indexOfFirstBook = indexOfLastBook - displayedBookPerPage;
@@ -48,42 +50,39 @@ const Store = ({ children }) => {
     let currentBookState = undefined;
     const bookStates = ["Read", "Currently-Reading", "Want-to-Read"];
 
-    for(const bookStatus of bookStates){
-      if(localStorage.getItem(bookStatus)){
-        const searchedBooks = JSON.parse(localStorage.getItem(bookStatus)).find(({book}) => book.id === bookId);
-        if(searchedBooks) currentBookState = bookStatus;
+    for (const bookStatus of bookStates) {
+      if (localStorage.getItem(bookStatus)) {
+        const searchedBooks = JSON.parse(localStorage.getItem(bookStatus)).find(
+          ({ book }) => book.id === bookId
+        );
+        if (searchedBooks) currentBookState = bookStatus;
       }
-      if(currentBookState)break;
+      if (currentBookState) break;
     }
-return currentBookState; 
+    return currentBookState;
   };
   const removeBookFromStorage = (storageName, bookId) => {
     let storedBook = JSON.parse(localStorage.getItem(storageName));
     let removeBook = storedBook.filter((item) => {
       return item.book.id !== bookId;
     });
-
     localStorage.setItem(storageName, JSON.stringify(removeBook));
   };
-
-  const author = (value) => {
-    if (value !== undefined) {
-      if (value.length >= 1) {
-        return value.map && value.map((item) => item);
-      } else {
-        return value;
-      }
+  const categoryResult = async (term, category) => {
+    const response = await getCategory(term, category);
+    if (response) {
+      const book = parseBook(response.data.items);
+      setCategory(book);
     }
   };
 
-  const bookStatus = (info) => {
+  const bookStatus = (id) => {
     return (
       <div>
         <button
           className="book-btn"
           onClick={() => {
-            addToStorage(info, 1, "Currently-Reading");
-          
+            addToStorage(id, 1, "Currently-Reading");
           }}
         >
           Currently Reading
@@ -91,7 +90,7 @@ return currentBookState;
         <button
           className="book-btn"
           onClick={() => {
-            addToStorage(info, 1, "Read");
+            addToStorage(id, 1, "Read");
           }}
         >
           Read
@@ -99,7 +98,7 @@ return currentBookState;
         <button
           className="book-btn"
           onClick={() => {
-            addToStorage(info, 1, "Want-to-Read");
+            addToStorage(id, 1, "Want-to-Read");
           }}
         >
           Want to read
@@ -122,7 +121,6 @@ return currentBookState;
     });
   };
   const store = {
-    author: author,
     parseBook: parseBook,
     book: parseBook(book),
     addToStorage: addToStorage,
@@ -134,6 +132,9 @@ return currentBookState;
     setRecommended: setRecommended,
     removeBookFromStorage: removeBookFromStorage,
     bookStatus: bookStatus,
+    categoryResult: categoryResult,
+    category: category,
+    setCategory: setCategory,
   };
   return <BookContext.Provider value={store}>{children}</BookContext.Provider>;
 };

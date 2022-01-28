@@ -83,7 +83,7 @@ const HomePage = () => {
               <h1>Genres</h1>
             </div>
             {bookCategory && (
-              <div className="book-container">
+              <div className="genre-container">
                 {bookCategory.map((item, index) => (
                   <div key={index}>
                     <button className="genre-btn">

@@ -8,7 +8,7 @@ import "./app.css";
 
 function App() {
   return (
-    <div>
+    <div >
       <BrowserRouter>
         <Routes>
           <Route path="/" caseSensitive={false} element={<HomePage />} />
