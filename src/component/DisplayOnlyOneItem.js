@@ -3,7 +3,7 @@ import { BookContext } from "../utils/store";
 import { useContext, useState } from "react";
 import Navigation from "./Navigation";
 import "./book.css";
-import "./homePage.css";
+
 const DisplayOnlyOneItem = () => {
   const [showMore, setShowMore] = useState(false);
   const value = useContext(BookContext);

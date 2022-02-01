@@ -1,11 +1,10 @@
 import { useContext, useEffect} from "react";
-
 import Books from "./Books";
 import Navigation from "./Navigation";
 import { bookCategory } from "../model/array";
 import { BookContext } from "../utils/store";
 import { useParams } from "react-router";
-import "./homePage.css";
+
 const Category = () => {
   const value = useContext(BookContext);
 

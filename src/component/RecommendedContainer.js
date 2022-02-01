@@ -1,14 +1,14 @@
 import React, { useContext } from "react";
 import { BookContext } from "../utils/store";
 import Books from "./Books";
-import "./homePage.css";
+
 import Carousel from "react-elastic-carousel";
 const RecommendedContainer = () => {
   const value = useContext(BookContext);
 
   const breakPoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 100, itemsToShow: 3, itemsToScroll: 2 },
+    { width: 100, itemsToShow: 1 },
     { width: 768, itemsToShow: 3 },
   ];
 

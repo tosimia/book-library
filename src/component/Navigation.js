@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import { stored } from "../model/array";
+
 const Navigation = () => {
   return (
-    <nav>
-      <Link to="/">Home</Link>
+    // <div >
+     <nav > 
+    
       <div>
+      <h2>Bookshelves</h2>
+      <Link to="/">Home</Link>
         {stored.map((data, index) => (
           <div key={index}>
             <Link onClick={window.location.reload} to={`/criteria/${data}`}>
@@ -13,7 +17,10 @@ const Navigation = () => {
           </div>
         ))}
       </div>
-    </nav>
+
+      
+    </nav> 
+    // </div>
   );
 };
 export default Navigation;

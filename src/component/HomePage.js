@@ -4,12 +4,10 @@ import { Link } from "react-router-dom";
 import { bookCategory, author } from "../model/array";
 import Books from "./Books";
 import Navigation from "./Navigation";
-import Search from "./Search";
 import BookPagination from "./Pagination";
-import "./homePage.css";
 import "./book.css";
 import RecommendedContainer from "./RecommendedContainer";
-
+import Search from "./Search";
 const HomePage = () => {
   const value = useContext(BookContext);
 
@@ -20,6 +18,7 @@ const HomePage = () => {
           <div>
             <Search />
           </div>
+          <div></div>
           <div>
             <h1>Recommended</h1>
             <div>
@@ -46,11 +45,8 @@ const HomePage = () => {
         </div>
 
         <div>
-          <div>
-            <div className="author-text">
-              <h2>Bookshelves</h2>
-              <Navigation />
-            </div>
+          <div className="author-text">
+            <Navigation />
           </div>
           <div>
             <h1>Top Authors</h1>
@@ -58,7 +54,7 @@ const HomePage = () => {
               {author && (
                 <div className="author-container">
                   {author.map((item, index) => (
-                    <div key={index} className="bk-container">
+                    <div key={index}>
                       <div>
                         <img
                           src={item.image}

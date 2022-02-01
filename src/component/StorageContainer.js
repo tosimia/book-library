@@ -3,7 +3,7 @@ import { BookContext } from "../utils/store";
 import Books from "./Books";
 import Navigation from "./Navigation";
 import { useParams } from "react-router";
-import "./homePage.css";
+
 const StorageContainer = () => {
   const [storedBook, setStoredbook] = useState([]);
   const value = useContext(BookContext);
