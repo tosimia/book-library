@@ -1,4 +1,4 @@
-import { useContext, useEffect} from "react";
+import { useContext, useEffect } from "react";
 import Books from "./Books";
 import Navigation from "./Navigation";
 import { bookCategory } from "../model/array";
@@ -10,17 +10,17 @@ const Category = () => {
 
   const param = useParams();
 
-  const isCategory = () => {
- return bookCategory.filter((item) => {
-      if (param.category === item) {
-       return  value.categoryResult("subject", item);
-      }
-    });
-  };
-
   useEffect(() => {
+    const isCategory = () => {
+      bookCategory.filter((item) => {
+        if (param.category === item) {
+          return value.categoryResult("subject", item);
+        }
+        return item;
+      });
+    };
     isCategory();
-  }, []);
+  }, [param, value]);
 
   return (
     <>

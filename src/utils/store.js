@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import data from "../model/book.json";
-import recommendedBooks from "../model/recommended.js";
+import {recommendedBooks} from "../model/recommended.js";
 import { getCategory } from "../services";
 export const BookContext = React.createContext();
 

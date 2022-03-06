@@ -1,5 +1,5 @@
-let books;
-export default books = [
+
+export const recommendedBooks = [
   {
     title: "Children Of Blood And Bone",
     author: "by Tomi Adeyemi",
