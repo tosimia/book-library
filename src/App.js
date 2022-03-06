@@ -8,12 +8,12 @@ import "./app.css";
 
 function App() {
   return (
-    <div >
+    <div>
       <BrowserRouter>
         <Routes>
           <Route path="/" caseSensitive={false} element={<HomePage />} />
           <Route
-            path={`/criteria/:slug`}
+            path={`/:slug`}
             caseSensitive={false}
             element={<StorageContainer />}
           />

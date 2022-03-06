@@ -11,7 +11,7 @@ const Navigation = () => {
       <Link to="/">Home</Link>
         {stored.map((data, index) => (
           <div key={index}>
-            <Link onClick={window.location.reload} to={`/criteria/${data}`}>
+            <Link onClick={window.location.reload} to={`/${data}`}>
               {data}
             </Link>
           </div>
