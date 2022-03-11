@@ -11,10 +11,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ## Project planning
-![project structure](/mage/project-structure.png)
+![project structure](./project-structure.png)
 
 ## HomePage
-![home page](./image/HomePage.png)
+![HomePage](./HomePage.png)
 
 ## Technologies
 * JavaScript
@@ -38,9 +38,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 * User and mobile friendly
 * Mobile responsibility and user accessibility
 * A Search for users to search for title, author subject & publisher
-![search feature](./image/Search-feature.png)  
+![search feature](./Search-feature.png)  
 * Users can pick a book by genre
 * Ability for users to paginate and go into different pages
 * Ability for users to update their library whenever they’ve finished reading, have an intention to read a book or are currently reading a book
-![Genre](./image/Genre.png)
+![Genre](./Genre.png)
 
