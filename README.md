@@ -7,11 +7,11 @@
 - to run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-![screen-gif](./image/myScreen.gif)
+![screen-gif](./myScreen.gif)
 
 
 ## Project planning
-![project structure](https://github.com/tosimiadesoye/book-library/blob/main/image/project-structure.png)
+![project structure](/mage/project-structure.png)
 
 ## HomePage
 ![home page](./image/HomePage.png)
