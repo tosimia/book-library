@@ -11,7 +11,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 ## Project planning
-![project structure](./image/project-structure.png)
+![project structure](https://github.com/tosimiadesoye/book-library/blob/main/image/project-structure.png)
 
 ## HomePage
 ![home page](./image/HomePage.png)
