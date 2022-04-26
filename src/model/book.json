@@ -41,11 +41,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=NhBmDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=NhBmDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=NhBmDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=NhBmDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=NhBmDwAAQBAJ&printsec=frontcover&dq=queenie&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=NhBmDwAAQBAJ&printsec=frontcover&dq=queenie&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=NhBmDwAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=NhBmDwAAQBAJ"
     },
@@ -85,12 +85,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/Queenie-sample-epub.acsm?id=NhBmDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/Queenie-sample-epub.acsm?id=NhBmDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=NhBmDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=NhBmDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -139,11 +139,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=9j4JGEkCA5cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=9j4JGEkCA5cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=9j4JGEkCA5cC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=9j4JGEkCA5cC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=9j4JGEkCA5cC&printsec=frontcover&dq=ghana+must+go&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=9j4JGEkCA5cC&printsec=frontcover&dq=ghana+must+go&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=9j4JGEkCA5cC&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=9j4JGEkCA5cC"
     },
@@ -183,12 +183,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/Ghana_Must_Go-sample-epub.acsm?id=9j4JGEkCA5cC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/Ghana_Must_Go-sample-epub.acsm?id=9j4JGEkCA5cC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=9j4JGEkCA5cC&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=9j4JGEkCA5cC&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -238,11 +238,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=djc_DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=djc_DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=djc_DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=djc_DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=djc_DwAAQBAJ&printsec=frontcover&dq=the+girl+who+smiled+beads&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=djc_DwAAQBAJ&printsec=frontcover&dq=the+girl+who+smiled+beads&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=djc_DwAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=djc_DwAAQBAJ"
     },
@@ -282,12 +282,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/The_Girl_Who_Smiled_Beads-sample-epub.acsm?id=djc_DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/The_Girl_Who_Smiled_Beads-sample-epub.acsm?id=djc_DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=djc_DwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=djc_DwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -336,11 +336,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=QXHwNEB2CkYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=QXHwNEB2CkYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=QXHwNEB2CkYC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=QXHwNEB2CkYC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=QXHwNEB2CkYC&printsec=frontcover&dq=americanah&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=QXHwNEB2CkYC&printsec=frontcover&dq=americanah&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=QXHwNEB2CkYC&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=QXHwNEB2CkYC"
     },
@@ -380,12 +380,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/Americanah-sample-epub.acsm?id=QXHwNEB2CkYC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/Americanah-sample-epub.acsm?id=QXHwNEB2CkYC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=QXHwNEB2CkYC&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=QXHwNEB2CkYC&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -434,11 +434,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=NWrpDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=NWrpDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=NWrpDQAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=NWrpDQAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=NWrpDQAAQBAJ&printsec=frontcover&dq=what+we+lose&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=NWrpDQAAQBAJ&printsec=frontcover&dq=what+we+lose&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=NWrpDQAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=NWrpDQAAQBAJ"
     },
@@ -478,12 +478,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/What_We_Lose-sample-epub.acsm?id=NWrpDQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/What_We_Lose-sample-epub.acsm?id=NWrpDQAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=NWrpDQAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=NWrpDQAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -533,11 +533,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=BnudfIm9NMUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=BnudfIm9NMUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=BnudfIm9NMUC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=BnudfIm9NMUC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=BnudfIm9NMUC&printsec=frontcover&dq=Five-Carat+Soul&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=BnudfIm9NMUC&printsec=frontcover&dq=Five-Carat+Soul&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=BnudfIm9NMUC&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=BnudfIm9NMUC"
     },
@@ -577,12 +577,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/The_Good_Lord_Bird-sample-epub.acsm?id=BnudfIm9NMUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/The_Good_Lord_Bird-sample-epub.acsm?id=BnudfIm9NMUC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=BnudfIm9NMUC&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=BnudfIm9NMUC&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -629,11 +629,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=xeHGDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=xeHGDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=xeHGDgAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=xeHGDgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=xeHGDgAAQBAJ&printsec=frontcover&dq=ordinary+light&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=xeHGDgAAQBAJ&printsec=frontcover&dq=ordinary+light&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=xeHGDgAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=xeHGDgAAQBAJ"
     },
@@ -673,13 +673,13 @@
       "textToSpeechPermission": "ALLOWED",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/Ordinary_Light-sample-epub.acsm?id=xeHGDgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/Ordinary_Light-sample-epub.acsm?id=xeHGDgAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/Ordinary_Light-sample-pdf.acsm?id=xeHGDgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/Ordinary_Light-sample-pdf.acsm?id=xeHGDgAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=xeHGDgAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=xeHGDgAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -726,11 +726,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=f2KMDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=f2KMDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=f2KMDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=f2KMDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=f2KMDwAAQBAJ&printsec=frontcover&dq=the+water+dancer&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=f2KMDwAAQBAJ&printsec=frontcover&dq=the+water+dancer&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=f2KMDwAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=f2KMDwAAQBAJ"
     },
@@ -770,12 +770,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/The_Water_Dancer-sample-epub.acsm?id=f2KMDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/The_Water_Dancer-sample-epub.acsm?id=f2KMDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=f2KMDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=f2KMDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -824,11 +824,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=tiSPDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=tiSPDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=tiSPDAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=tiSPDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=tiSPDAAAQBAJ&printsec=frontcover&dq=Known+and+Strange+Things&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=tiSPDAAAQBAJ&printsec=frontcover&dq=Known+and+Strange+Things&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=tiSPDAAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=tiSPDAAAQBAJ"
     },
@@ -868,13 +868,13 @@
       "textToSpeechPermission": "ALLOWED",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/Known_and_Strange_Things-sample-epub.acsm?id=tiSPDAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/Known_and_Strange_Things-sample-epub.acsm?id=tiSPDAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/Known_and_Strange_Things-sample-pdf.acsm?id=tiSPDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/Known_and_Strange_Things-sample-pdf.acsm?id=tiSPDAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=tiSPDAAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=tiSPDAAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -924,11 +924,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=OqJaDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=OqJaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=OqJaDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=OqJaDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=OqJaDwAAQBAJ&printsec=frontcover&dq=black+is+the+body&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=OqJaDwAAQBAJ&printsec=frontcover&dq=black+is+the+body&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=OqJaDwAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=OqJaDwAAQBAJ"
     },
@@ -968,12 +968,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/Black_Is_the_Body-sample-epub.acsm?id=OqJaDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/Black_Is_the_Body-sample-epub.acsm?id=OqJaDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=OqJaDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=OqJaDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -1022,11 +1022,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=Kv16DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=Kv16DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=Kv16DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=Kv16DwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=Kv16DwAAQBAJ&printsec=frontcover&dq=born+a+crime&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=Kv16DwAAQBAJ&printsec=frontcover&dq=born+a+crime&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=Kv16DwAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=Kv16DwAAQBAJ"
     },
@@ -1066,12 +1066,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/It_s_Trevor_Noah_Born_a_Crime-sample-epub.acsm?id=Kv16DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/It_s_Trevor_Noah_Born_a_Crime-sample-epub.acsm?id=Kv16DwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=Kv16DwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=Kv16DwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -1120,11 +1120,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=udzdZ7oHIdgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=udzdZ7oHIdgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=udzdZ7oHIdgC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=udzdZ7oHIdgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=udzdZ7oHIdgC&printsec=frontcover&dq=the+nickel+boys&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=udzdZ7oHIdgC&printsec=frontcover&dq=the+nickel+boys&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=udzdZ7oHIdgC&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=udzdZ7oHIdgC"
     },
@@ -1164,12 +1164,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/Zone_One-sample-epub.acsm?id=udzdZ7oHIdgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/Zone_One-sample-epub.acsm?id=udzdZ7oHIdgC&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=udzdZ7oHIdgC&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=udzdZ7oHIdgC&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -1219,11 +1219,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=CZJbDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=CZJbDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=CZJbDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=CZJbDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=CZJbDwAAQBAJ&printsec=frontcover&dq=we+cast+a+shadow&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=CZJbDwAAQBAJ&printsec=frontcover&dq=we+cast+a+shadow&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=CZJbDwAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=CZJbDwAAQBAJ"
     },
@@ -1263,12 +1263,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/We_Cast_a_Shadow-sample-epub.acsm?id=CZJbDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/We_Cast_a_Shadow-sample-epub.acsm?id=CZJbDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=CZJbDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=CZJbDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -1318,11 +1318,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=ExJdDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=ExJdDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=ExJdDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=ExJdDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=ExJdDwAAQBAJ&printsec=frontcover&dq=Black+Leopard,+Red+Wolf&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=ExJdDwAAQBAJ&printsec=frontcover&dq=Black+Leopard,+Red+Wolf&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=ExJdDwAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=ExJdDwAAQBAJ"
     },
@@ -1362,12 +1362,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/Black_Leopard_Red_Wolf-sample-epub.acsm?id=ExJdDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/Black_Leopard_Red_Wolf-sample-epub.acsm?id=ExJdDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=ExJdDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=ExJdDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -1417,11 +1417,11 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=vE6MDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=vE6MDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=vE6MDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=vE6MDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=vE6MDwAAQBAJ&printsec=frontcover&dq=more+than+enough&hl=&as_brr=6&cd=1&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=vE6MDwAAQBAJ&printsec=frontcover&dq=more+than+enough&hl=&as_brr=6&cd=1&source=gbs_api",
       "infoLink": "https://play.google.com/store/books/details?id=vE6MDwAAQBAJ&source=gbs_api",
       "canonicalVolumeLink": "https://play.google.com/store/books/details?id=vE6MDwAAQBAJ"
     },
@@ -1461,12 +1461,12 @@
       "textToSpeechPermission": "ALLOWED_FOR_ACCESSIBILITY",
       "epub": {
         "isAvailable": true,
-        "acsTokenLink": "http://books.google.co.uk/books/download/More_Than_Enough-sample-epub.acsm?id=vE6MDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+        "acsTokenLink": "https://books.google.co.uk/books/download/More_Than_Enough-sample-epub.acsm?id=vE6MDwAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
       },
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=vE6MDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=vE6MDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "SAMPLE",
       "quoteSharingAllowed": false
     },
@@ -1515,12 +1515,12 @@
         "containsImageBubbles": false
       },
       "imageLinks": {
-        "smallThumbnail": "http://books.google.com/books/content?id=GNjBDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
-        "thumbnail": "http://books.google.com/books/content?id=GNjBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        "smallThumbnail": "https://books.google.com/books/content?id=GNjBDwAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+        "thumbnail": "https://books.google.com/books/content?id=GNjBDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
       },
       "language": "en",
-      "previewLink": "http://books.google.co.uk/books?id=GNjBDwAAQBAJ&dq=Imbolo+Mbue&hl=&as_brr=6&cd=1&source=gbs_api",
-      "infoLink": "http://books.google.co.uk/books?id=GNjBDwAAQBAJ&dq=Imbolo+Mbue&hl=&as_brr=6&source=gbs_api",
+      "previewLink": "https://books.google.co.uk/books?id=GNjBDwAAQBAJ&dq=Imbolo+Mbue&hl=&as_brr=6&cd=1&source=gbs_api",
+      "infoLink": "https://books.google.co.uk/books?id=GNjBDwAAQBAJ&dq=Imbolo+Mbue&hl=&as_brr=6&source=gbs_api",
       "canonicalVolumeLink": "https://books.google.com/books/about/How_Beautiful_We_Were.html?hl=&id=GNjBDwAAQBAJ"
     },
     "saleInfo": {
@@ -1540,7 +1540,7 @@
       "pdf": {
         "isAvailable": false
       },
-      "webReaderLink": "http://play.google.com/books/reader?id=GNjBDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
+      "webReaderLink": "https://play.google.com/books/reader?id=GNjBDwAAQBAJ&hl=&as_brr=6&printsec=frontcover&source=gbs_api",
       "accessViewStatus": "NONE",
       "quoteSharingAllowed": false
     },
@@ -1556,7 +1556,7 @@
         ],
         "description": "A NEW YORK TIMES BOOK OF THE YEAR AN OBSERVER BOOK OF THE YEAR OPRAH BOOK CLUB PICK A powerful and timely story of marriage, class, race and the pursuit of the American Dream. Behold the Dreamers is a dazzling debut novel about life, liberty and the pursuit of happiness – and of what we’re prepared to sacrifice to hold on to each of them.",
         "imageLinks": {
-            "thumbnail": "http://books.google.com/books/content?id=R16QCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            "thumbnail": "https://books.google.com/books/content?id=R16QCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         }
     },
     "saleInfo": {
@@ -1575,7 +1575,7 @@
         ],
         "description": "The stories collected in What Is Not Yours Is Not Yours are linked by more than the exquisitely winding prose of their creator: Helen Oyeyemi's ensemble cast of characters slip from the pages of their own stories only to surface in another. The reader is invited into a world of lost libraries and locked gardens, of marshlands where the drowned dead live and a city where all the clocks have stopped; students hone their skills at puppet school, the Homely Wench Society commits a guerrilla book-swap, and lovers exchange books and roses on St Jordi's Day. It is a collection of towering imagination, marked by baroque beauty and a deep sensuousness.",
         "imageLinks": {
-            "thumbnail": "http://books.google.com/books/content?id=ELG6CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            "thumbnail": "https://books.google.com/books/content?id=ELG6CgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         }
     },
     "saleInfo": {
@@ -1594,7 +1594,7 @@
         ],
         "description": "THE SUNDAY TIMES BESTSELLER Selected for Granta's Best of Young American Novelists 2017 Winner of the National Book Critics Circle Award for Best First Book Shortlisted for the PEN/Robert W. Bingham Prize for Debut Fiction Effia and Esi: two sisters with two very different destinies. One sold into slavery; one a slave trader's wife. The consequences of their fate reverberate through the generations that follow. Taking us from the Gold Coast of Africa to the cotton-picking plantations of Mississippi; from the missionary schools of Ghana to the dive bars of Harlem, spanning three continents and seven generations, Yaa Gyasi has written a miraculous novel - the intimate, gripping story of a brilliantly vivid cast of characters and through their lives the very story of America itself. Epic in its canvas and intimate in its portraits, Homegoing is a searing and profound debut from a masterly new writer.",
         "imageLinks": {
-            "thumbnail": "http://books.google.com/books/content?id=L7c4CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            "thumbnail": "https://books.google.com/books/content?id=L7c4CwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         }
     },
     "saleInfo": {
@@ -1613,7 +1613,7 @@
         ],
         "description": "THE TOP 10 NEW YORK TIMES BESTSELLER LONGLISTED FOR THE WOMEN'S PRIZE 2020 'Will remind you why you love reading' Stylist (Best New Books for 2020) 'Sublime... will strike you in the heart' Candice Carty-Williams, author of Queenie 'Profound, moving and consistently unexpected... Pure poetry' Observer 'A true spell of a book' Ocean Vuong, author of On Earth We Are Briefly Gorgeous 'A sharply focused gem' Sunday Times 'An epic in miniature' Tayari Jones, author of An American Marriage 'Dazzling... With urgent, vital insights into questions of class, gender, race, history, queerness and sex' New York Times 'A banger' Ta-Nehisi Coates, author of The Water Dancer An unexpected teenage pregnancy brings together two families from different social classes, and exposes the private hopes, disappointments and longings that can bind or divide us. From the New York Times-bestselling and National Book Award-winning author of Another Brooklyn and Brown Girl Dreaming. Brooklyn, 2001. It is the evening of sixteen-year-old Melody's coming of age ceremony in her grandparents' brownstone. Watched lovingly by her relatives and friends, making her entrance to the music of Prince, she wears a special custom-made dress - the very same dress that was sewn for a different wearer, Melody's mother, for a celebration that ultimately never took place. Unfurling the history of Melody's family - from the 1921 Tulsa race massacre to post 9/11 New York - Red at the Bone explores sexual desire, identity, class, and the life-altering facts of parenthood, as it looks at the ways in which young people must so often make fateful decisions about their lives before they have even begun to figure out who they are and what they want to be. *** ONE OF THE BOOKS OF THE YEAR FOR: New York Times; Washington Post; Time; USA Today; O, The Oprah Magazine; Elle; Good Housekeeping; Esquire; NPR; New York Public Library; Library Journal; Kirkus; BookRiot; She Reads; The Undefeated ***",
         "imageLinks": {
-            "thumbnail": "http://books.google.com/books/content?id=GLisDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+            "thumbnail": "https://books.google.com/books/content?id=GLisDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
         }
     },
     "saleInfo": {
@@ -1633,7 +1633,7 @@
             ],
             "description": "NEW YORK TIMES BESTSELLER • The bestselling author of How Stella Got Her Groove Back and Waiting To Exhale is back with the inspiring story of a woman who shakes things up in her life to find greater meaning NAMED ONE OF THE BEST BOOKS OF THE YEAR BY LIBRARY JOURNAL In I Almost Forgot About You, Dr. Georgia Young's wonderful life—great friends, family, and successful career—aren't enough to keep her from feeling stuck and restless. When she decides to make some major changes in her life, including quitting her job as an optometrist and moving house, she finds herself on a wild journey that may or may not include a second chance at love. Georgia’s bravery reminds us that it’s never too late to become the person you want to be, and that taking chances, with your life and your heart, are always worthwhile. Big-hearted, genuine, and universal, I Almost Forgot About You shows what can happen when you face your fears, take a chance, and open yourself up to life, love, and the possibility of a new direction. It’s everything you’ve always loved about Terry McMillan. Praise for I Almost Forgot About You “McMillan paints relationships in joyous primary colors; her novel brims with sexy repartee, caustic humor, and a fluent, assured prose that shines a bright light on her memorable characters. Her very best since Waiting to Exhale.”—O: The Oprah Magazine “The novel is immensely companionable, and Georgia is as alive, complex, inquiring, motivated and sexy as any twenty-five-year-old. Maybe more so.”—The New York Times Book Review “Self-discovery, second chances and the importance of family are thematic hallmarks of McMillan’s novels. . . . I Almost Forgot About You checks all the boxes.”—Washington Post “McMillan is funny and frank about men, women and sex. Her summaries of Georgia’s marriages and major love connections . . . are powerful and poetic.”—USA Today “Reading a Terry McMillan book feels like catching up with an old friend. . . . I Almost Forgot About You is a book that is important for readers of every age.”—Ebony",
             "imageLinks": {
-                "thumbnail": "http://books.google.com/books/content?id=O9yKCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                "thumbnail": "https://books.google.com/books/content?id=O9yKCgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
             }
         },
         "saleInfo": {
@@ -1653,7 +1653,7 @@
             ],
             "description": "All you have are your words. AS RECOMMENDED BY MALALA YOUSAFZAI AN INSTANT NEW YORK TIMES BESTSELLER A STYLIST BEST BOOK OF 2020 'A stunning novel - original, beautiful and powerful' Rosamund Lupton Meet Adunni, a teenage girl born into a rural Nigerian village. Aged fourteen, she is a commodity, a wife, a servant. She is also smart, funny, curious, with a spirit and joy infectious to those around her. And despite her situation going from bad to worse, she has a plan to escape: she will find her 'louding voice' and get her education, so that she can speak up for herself - and all the girls who came before her. As she turns enemies into friends and superiors into aides, Adunni will take you with her on a heart-breaking but inspiring journey from a small village to the wealthy enclaves of Lagos, and show you that no matter the situation, there is always some joy to be found. 'A story of courage that will win over your heart' Stylist 'An unforgettable novel' Jeanine Cummins 'A sparkling debut . . . marks the appearance of a strong and stylish new talent' Harper's Bazaar 'A true original, this will open your eyes' Cosmopolitan The BBC Radio 2 Book Club featuring THE GIRL WITH THE LOUDING VOICE is now available to listen to on BBC Sounds.",
             "imageLinks": {
-                "thumbnail": "http://books.google.com/books/content?id=jXqaDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+                "thumbnail": "https://books.google.com/books/content?id=jXqaDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
             }
         },
         "saleInfo": {
@@ -1673,7 +1673,7 @@
             ],
             "description": "'Required reading.' - Cosmopolitan 'This should be read as a sacred text. Here, you will bear witness to a perpetual salvation song.' - Jason Reynolds Remember that moment when you first encountered a character who seemed to be written just for you? That feeling of belonging remains with readers the rest of their lives - but not everyone regularly sees themselves reflected on the pages of a book. In this timely anthology, Glory Edim, founder of the online community, Well-Read Black Girl, brings together original essays by some of America's best black women writers to shine a light on how important it is that we all - regardless of gender, race, religion, or ability - have the opportunity to find ourselves in literature. Whether it's learning about the complexities of femalehood from Zora Neale Hurston and Toni Morrison, finding a new type of love in The Color Purple, or using mythology to craft an alternative black future, each essay reminds us why we turn to books in times of both struggle and relaxation. As she has done with her book club-turned-online community, Edim has created a space where black women's writing, knowledge and life experiences are lifted up, to be shared with all readers who value the power of a story to help us understand the world, and ourselves. Contributors include: Jesmyn Ward, Lynn Nottage, Jacqueline Woodson, Gabourey Sidibe, Morgan Jerkins, Tayari Jones, Rebecca Walker, and Barbara Smith. 'Essential reading for the twenty-first-century reader. This book is smart, powerful, and complete.' - Min Jin Lee, author of Pachinko",
             "imageLinks": {
-                "thumbnail": "http://books.google.com/books/content?id=eD90DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+                "thumbnail": "https://books.google.com/books/content?id=eD90DwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
             }
         },
         "saleInfo": {
@@ -1693,7 +1693,7 @@
             ],
             "description": "A new literary star' The Times A Reese Witherspoon Book Club Pick // A Zoella Book Club Pick // A Times, Stylist, Elle, Glamour and BBC Best Book of 2020 When Emira is apprehended at a supermarket for 'kidnapping' the white child she's actually babysitting, it sets off an explosive chain of events. Her employer Alix, a feminist blogger with the best of intentions, resolves to make things right. But Emira herself is aimless, broke and wary of Alix's desire to help. When a surprising connection emerges between the two women, it sends them on a crash course that will upend everything they think they know – about themselves, each other, and the messy dynamics of privilege. __________________________ 'Essential. This year's hit debut' Guardian 'A biting tale of race and class' Sunday Times 'I couldn't put this down' Jojo Moyes 'Bites into the zeitgeist then spits it out with gusto. You really should read it, ASAP' Stylist 'About power dynamics, race, social commentary, and also why and how we are the woman we are' Pandora Sykes 'An extraordinarily deft debut, written with wisdom, kindness and sharp humour' Daily Mail 'A beautiful tale of how we live now' Elizabeth Day",
             "imageLinks": {
-                "thumbnail": "http://books.google.com/books/content?id=fjadDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+                "thumbnail": "https://books.google.com/books/content?id=fjadDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
             }
         },
         "saleInfo": {
@@ -1713,7 +1713,7 @@
             ],
             "description": "Little Red Riding Hood and the encounters she has on her way to visit grandmother's house.",
             "imageLinks": {
-                "thumbnail": "http://books.google.com/books/content?id=q3kpDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                "thumbnail": "https://books.google.com/books/content?id=q3kpDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
             }
         },
         "saleInfo": {
@@ -1733,7 +1733,7 @@
             ],
             "description": "Presents a graphic novel adaptation of Lewis Carroll's popular novels about an opinionated and imaginative young girl who travels to fantastical lands.",
             "imageLinks": {
-                "thumbnail": "http://books.google.com/books/content?id=aEF_Fo7xCzsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                "thumbnail": "https://books.google.com/books/content?id=aEF_Fo7xCzsC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
             }
         },
         "saleInfo": {
@@ -1753,7 +1753,7 @@
             ],
             "description": "Discover Fairy Tales Someone has been eating my porridge! The classic fairy tale of Goldilocks and the Three Bears has been retold with simple, rhythmic sentences for beginning readers. Discover Fairy Tales are familiar stories with cute illustrations, perfect for the touchscreen generation.",
             "imageLinks": {
-                "thumbnail": "http://books.google.com/books/content?id=CrGwCt3e0LMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+                "thumbnail": "https://books.google.com/books/content?id=CrGwCt3e0LMC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
             }
         },
         "saleInfo": {
